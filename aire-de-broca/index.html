@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>L'Aire de Broca, librairie à Pont-l'Abbé</title>
+<meta name="description" content="Librairie indépendante place de la République à Pont-l'Abbé : romans, jeunesse, BD, papeterie et conseils de libraires. Ouvert du lundi au samedi, 9h30 à 19h.">
+<!--
+  Photos : Unsplash (licence Unsplash, usage libre)
+  hero.jpg    https://unsplash.com/photos/YoQbGvLu8DE (Philipp Hubert)
+  lecture.jpg https://unsplash.com/photos/uWNxBHCCQs4 (Ana Markovych)
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --page:#f4efe4; --page-2:#e9e1cf; --ink:#22281f; --green:#2f4a3a; --green-2:#46664f;
+  --rust:#a4532f; --muted:#5f6359; --rule:#cfc4ad;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:400 1rem/1.65 "Public Sans",system-ui,sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:400;line-height:1.08;margin:0 0 .4em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+
+.top{border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;justify-content:space-between;align-items:baseline;padding-top:16px;padding-bottom:14px;gap:12px}
+.top b{font:600 1.25rem/1 Newsreader,serif;color:var(--green)}
+.top a{font-size:.92rem;text-decoration:none;border-bottom:1px solid var(--rust)}
+
+.hero{display:grid;gap:0}
+.hero .txt{padding:42px 18px 36px}
+.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--rust);margin-bottom:18px}
+.hero h1{font-size:clamp(2.6rem,10vw,5rem);color:var(--green)}
+.hero h1 em{font-style:italic;color:var(--ink)}
+.hero p{font:400 1.2rem/1.55 Newsreader,serif;max-width:36ch;margin:0 0 26px}
+.hero .pic{height:52vh;min-height:300px;background:url(assets/hero.jpg) center/cover}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:12px 20px;text-decoration:none;font-weight:600;border-radius:2px}
+.btn.main{background:var(--green);color:var(--page)}
+.btn.main:hover{background:var(--green-2)}
+.btn.line{border:1px solid var(--green);color:var(--green)}
+.btn.line:hover{background:var(--page-2)}
+
+section{padding:60px 0}
+.rayons h2{font-size:clamp(2rem,6vw,3rem);color:var(--green);max-width:18ch}
+.rayons .intro{max-width:56ch;margin:0 0 34px;color:var(--muted)}
+dl.shelf{margin:0;display:grid;gap:0;border-top:1px solid var(--ink)}
+dl.shelf div{display:grid;gap:4px;padding:18px 0;border-bottom:1px solid var(--rule)}
+dl.shelf dt{font:600 1.3rem/1.2 Newsreader,serif}
+dl.shelf dd{margin:0;color:var(--muted);max-width:60ch}
+
+.libraires{background:var(--green);color:#ece6d6}
+.libraires .wrap{display:grid;gap:34px;align-items:center}
+.libraires .num{font:400 clamp(5rem,22vw,9rem)/.8 Newsreader,serif;color:#d9b48f}
+.libraires h2{font-size:clamp(1.9rem,5vw,2.7rem)}
+.libraires p{max-width:48ch;margin:0 0 12px}
+.libraires img{max-height:520px;object-fit:cover;width:100%}
+
+.pratique .wrap{display:grid;gap:40px}
+.pratique h2{font-size:2rem;color:var(--green)}
+table{border-collapse:collapse;width:100%;max-width:420px}
+td{padding:8px 2px;border-bottom:1px dotted var(--rule)}
+td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+tr.on td{color:var(--rust);font-weight:600}
+#status{font-weight:600;margin:0 0 12px}
+address{font-style:normal;font-size:1.08rem;margin:0 0 16px}
+ul.access{padding-left:1.1em;margin:0 0 18px;color:var(--muted)}
+.links a{display:inline-block;margin:0 18px 10px 0;text-underline-offset:4px;text-decoration-color:var(--rust)}
+
+footer{border-top:1px solid var(--rule);padding:28px 0 36px;font-size:.88rem;color:var(--muted)}
+footer nav a{margin-right:16px}
+#mentions{margin-top:12px;font-size:.82rem}
+.credit{margin-top:10px;font-size:.78rem}
+
+@media (min-width:860px){
+  .hero{grid-template-columns:1.05fr 1fr;min-height:80vh}
+  .hero .txt{padding:80px 56px 60px 0;align-self:center;max-width:540px;justify-self:end}
+  .hero .pic{height:auto}
+  dl.shelf{grid-template-columns:1fr 1fr;column-gap:48px}
+  .libraires .wrap{grid-template-columns:1.2fr 1fr}
+  .pratique .wrap{grid-template-columns:1fr 1fr}
+}
+@media (min-width:860px) and (max-width:1120px){.hero .txt{padding-left:24px}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <b>L'Aire de Broca</b>
+    <a href="tel:+33298823095">02 98 82 30 95</a>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="txt">
+    <div class="eyebrow">Librairie indépendante, Pont-l'Abbé</div>
+    <h1>Des livres choisis, <em>des libraires pour en parler</em></h1>
+    <p>Sur la place de la République, une librairie générale où l'on vient flâner, demander un conseil ou commander le titre qui manque.</p>
+    <div class="btns">
+      <a class="btn main" href="tel:+33298823095">Appeler la librairie</a>
+      <a class="btn line" href="https://www.google.com/maps/search/?api=1&amp;query=L'Aire+de+Broca+42+Place+de+la+R%C3%A9publique+29120+Pont-l'Abb%C3%A9">Venir à la librairie</a>
+    </div>
+  </div>
+  <div class="pic" role="img" aria-label="Rayonnages d'une librairie chaleureuse"></div>
+</div>
+
+<section class="rayons">
+  <div class="wrap">
+    <h2>Ce que vous trouverez en rayon</h2>
+    <p class="intro">Un fonds généraliste pour tous les âges, et les nouveautés de chaque saison mises en avant sur les tables.</p>
+    <dl class="shelf">
+      <div><dt>Littérature et rentrée littéraire</dt><dd>Romans français et étrangers, poche, nouveautés de la rentrée repérées par l'équipe.</dd></div>
+      <div><dt>Jeunesse</dt><dd>Albums, premières lectures et romans ados, pour offrir ou pour donner le goût de lire.</dd></div>
+      <div><dt>Bande dessinée</dt><dd>Albums, séries et romans graphiques pour petits et grands lecteurs.</dd></div>
+      <div><dt>Bretagne et régionalisme</dt><dd>Livres sur le Pays bigouden, la mer et la Bretagne, pour les habitants comme pour les visiteurs.</dd></div>
+      <div><dt>Papeterie et agendas</dt><dd>Agendas, carnets et fournitures, en particulier au moment de la rentrée.</dd></div>
+      <div><dt>Commandes</dt><dd>Un titre absent du rayon ? Les libraires le commandent pour vous, à retirer en boutique.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="libraires">
+  <div class="wrap">
+    <div>
+      <div class="num">9</div>
+      <h2>libraires à votre écoute</h2>
+      <p>L'équipe accueille, conseille et oriente chaque lecteur, que vous cherchiez un cadeau, un auteur précis ou simplement votre prochaine lecture.</p>
+      <p>La librairie organise aussi des rencontres et des animations tout au long de l'année : le programme est publié sur Facebook et Instagram.</p>
+      <div class="btns" style="margin-top:22px">
+        <a class="btn line" style="border-color:#ece6d6;color:#ece6d6" href="https://www.facebook.com/lairedebroca">Suivre sur Facebook</a>
+        <a class="btn line" style="border-color:#ece6d6;color:#ece6d6" href="https://www.instagram.com/lairedebroca/">Instagram</a>
+      </div>
+    </div>
+    <img src="assets/lecture.jpg" alt="Livres et bougies sur un rebord de fenêtre" width="900" height="1350" loading="lazy">
+  </div>
+</section>
+
+<section class="pratique" id="infos">
+  <div class="wrap">
+    <div>
+      <h2>Horaires</h2>
+      <p id="status"><span>Ouvert du lundi au samedi</span></p>
+      <table id="hours">
+        <tr data-d="1"><td>Lundi</td><td>9h30 - 19h</td></tr>
+        <tr data-d="2"><td>Mardi</td><td>9h30 - 19h</td></tr>
+        <tr data-d="3"><td>Mercredi</td><td>9h30 - 19h</td></tr>
+        <tr data-d="4"><td>Jeudi</td><td>9h30 - 19h</td></tr>
+        <tr data-d="5"><td>Vendredi</td><td>9h30 - 19h</td></tr>
+        <tr data-d="6"><td>Samedi</td><td>9h30 - 19h</td></tr>
+        <tr data-d="0"><td>Dimanche</td><td>Fermé</td></tr>
+      </table>
+      <p style="color:var(--muted);font-size:.9rem;margin-top:12px">En continu, sans fermeture le midi.</p>
+    </div>
+    <div>
+      <h2>Nous trouver</h2>
+      <address>L'Aire de Broca<br>42 place de la République<br>29120 Pont-l'Abbé</address>
+      <ul class="access">
+        <li>Accès pour les personnes à mobilité réduite</li>
+        <li>Stationnement en centre-ville, à deux pas</li>
+      </ul>
+      <div class="links">
+        <a href="tel:+33298823095">02 98 82 30 95</a>
+        <a href="mailto:librairie@airedebroca.fr">librairie@airedebroca.fr</a>
+        <a href="https://www.openstreetmap.org/node/3802671296">Plan OpenStreetMap</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=L'Aire+de+Broca+42+Place+de+la+R%C3%A9publique+29120+Pont-l'Abb%C3%A9">Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>L'Aire de Broca, librairie à Pont-l'Abbé</div>
+    <nav><a href="#mentions">Mentions légales</a><a href="#mentions">Confidentialité</a></nav>
+    <div id="mentions">Mentions légales et confidentialité. Éditeur : L'Aire de Broca, 42 place de la République, 29120 Pont-l'Abbé, SIREN 380 877 696. Directeur de la publication et hébergeur : à compléter. Ce site ne dépose aucun cookie et ne collecte aucune donnée personnelle ; les polices sont chargées depuis Google Fonts.</div>
+    <div class="credit">Maquette non officielle. Démo réalisée par Avel, développeur web.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var now=new Date(),d=now.getDay(),r=document.querySelector('#hours tr[data-d="'+d+'"]');
+  if(r)r.className='on';
+  var m=now.getHours()*60+now.getMinutes();
+  var open=d>=1&&d<=6&&m>=570&&m<1140;
+  var el=document.querySelector('#status span');
+  if(el)el.textContent=open?'Ouvert en ce moment':'Fermé en ce moment';
+})();
+</script>
+</body>
+</html>

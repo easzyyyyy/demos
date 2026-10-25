@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Le Soledo, pizzas et paninis à Pouldreuzic</title>
+<meta name="description" content="Le Soledo à Pouldreuzic, 10 rue de Quimper : pizzas à pâte fine et paninis maison faits avec des produits frais, à emporter. Commande par téléphone.">
+<!--
+  Photos : Unsplash (licence Unsplash, usage libre)
+  hero.jpg https://unsplash.com/photos/MQUqbmszGGM (Ivan Torres)
+  four.jpg https://unsplash.com/photos/vHRFraV4U00 (Fabrizio Pullara)
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mulish:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --crust:#f6ead6; --flour:#fbf4e8; --tomato:#b8321f; --tomato-d:#8e2415; --basil:#2f5b3a;
+  --ink:#2a1f19; --muted:#6f6158; --line:#e3cfb2;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--flour);color:var(--ink);font:400 1.03rem/1.6 Mulish,system-ui,sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2{font-family:"Bree Serif",Georgia,serif;font-weight:400;line-height:1.05;margin:0 0 .4em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;background:#2a1f19 url(assets/hero.jpg) center/cover;color:var(--flour)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,31,25,.25) 0%,rgba(42,31,25,.82) 72%)}
+.hero .wrap{position:relative;padding-top:120px;padding-bottom:40px;width:100%}
+.brand{position:absolute;top:18px;left:18px;right:18px;display:flex;justify-content:space-between;align-items:center;z-index:1}
+.brand b{font:400 1.5rem "Bree Serif",serif}
+.brand a{font-weight:800;text-decoration:none;background:var(--flour);color:var(--tomato-d);padding:8px 14px;border-radius:4px}
+.hero .where{font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;color:#f2c79b}
+.hero h1{font-size:clamp(2.8rem,11vw,5.6rem);max-width:12ch;margin-top:10px}
+.hero p{max-width:42ch;font-size:1.15rem;margin:0 0 24px;color:#f1e5d3}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:14px 22px;border-radius:4px;font-weight:800;text-decoration:none}
+.btn.main{background:var(--tomato);color:var(--flour)}
+.btn.main:hover{background:var(--tomato-d)}
+.btn.ghost{border:2px solid var(--flour);color:var(--flour)}
+.btn.ghost:hover{background:rgba(251,244,232,.12)}
+
+.ribbon{background:var(--basil);color:var(--flour);text-align:center;padding:14px 18px;font-weight:600}
+
+section{padding:60px 0}
+.carte h2{font-size:clamp(2rem,6vw,3rem);color:var(--tomato-d)}
+.carte .intro{max-width:54ch;color:var(--muted);margin:0 0 30px}
+.menu{display:grid;gap:22px}
+.menu article{background:var(--crust);padding:24px 22px;border-left:6px solid var(--tomato)}
+.menu article:nth-child(2){border-left-color:var(--basil)}
+.menu article:nth-child(3){border-left-color:#d79a3e}
+.menu h3{font:400 1.45rem "Bree Serif",serif;margin:0 0 8px}
+.menu p{margin:0;color:var(--muted)}
+.carte .note{margin-top:22px;font-size:.92rem;color:var(--muted)}
+
+.four{background:var(--crust)}
+.four .wrap{display:grid;gap:30px;align-items:center}
+.four img{border-radius:3px}
+.four h2{font-size:clamp(1.8rem,5vw,2.6rem)}
+.four p{max-width:46ch}
+
+.infos .wrap{display:grid;gap:36px}
+.infos h2{font-size:1.9rem;color:var(--tomato-d)}
+.hours-box{background:var(--crust);padding:22px;max-width:420px}
+.hours-box strong{display:block;font:400 1.6rem "Bree Serif",serif;color:var(--tomato-d);margin-bottom:6px}
+.hours-box p{margin:0 0 8px}
+address{font-style:normal;font-size:1.08rem;margin:0 0 16px}
+.links a{display:inline-block;margin:0 16px 10px 0;font-weight:600;text-underline-offset:4px;text-decoration-color:var(--tomato)}
+
+footer{border-top:1px solid var(--line);padding:28px 0 34px;font-size:.88rem;color:var(--muted)}
+footer nav a{margin-right:16px}
+#mentions{margin-top:12px;font-size:.82rem}
+.credit{margin-top:10px;font-size:.78rem}
+
+@media (min-width:860px){
+  .brand{left:max(18px,calc(50% - 522px));right:max(18px,calc(50% - 522px))}
+  .menu{grid-template-columns:1.3fr 1fr}
+  .menu article:first-child{grid-row:span 2}
+  .four .wrap{grid-template-columns:1.1fr 1fr}
+  .infos .wrap{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="brand">
+    <b>Le Soledo</b>
+    <a href="tel:+33298506523">02 98 50 65 23</a>
+  </div>
+  <div class="wrap">
+    <div class="where">10 rue de Quimper, Pouldreuzic</div>
+    <h1>Pizzas à pâte fine et paninis maison</h1>
+    <p>Des recettes préparées avec des produits frais, à commander par téléphone et à récupérer bien chaudes.</p>
+    <div class="btns">
+      <a class="btn main" href="tel:+33298506523">Commander par téléphone</a>
+      <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Soledo+10+Rue+de+Quimper+29710+Pouldreuzic">Itinéraire</a>
+    </div>
+  </div>
+</header>
+
+<div class="ribbon">Pizzas, paninis et snacking : le soir à partir de 17h30</div>
+
+<section class="carte">
+  <div class="wrap">
+    <h2>À la carte</h2>
+    <p class="intro">Une carte courte, préparée sur place. Les recettes du moment et les nouveautés sont annoncées sur la page Facebook du Soledo.</p>
+    <div class="menu">
+      <article>
+        <h3>Les pizzas</h3>
+        <p>Pâte fine, garnitures généreuses et produits frais. Des classiques de pizzeria et quelques recettes de la maison, à emporter.</p>
+      </article>
+      <article>
+        <h3>Les paninis</h3>
+        <p>Paninis maison, dorés à la commande, pour un repas sur le pouce.</p>
+      </article>
+      <article>
+        <h3>La gamme snacking</h3>
+        <p>De quoi grignoter ou compléter le repas : demandez ce qui est proposé ce jour-là.</p>
+      </article>
+    </div>
+    <p class="note">La carte détaillée et les prix sont donnés au téléphone ou au comptoir.</p>
+  </div>
+</section>
+
+<section class="four">
+  <div class="wrap">
+    <img src="assets/four.jpg" alt="Pizza en train de cuire dans un four" width="900" height="600" loading="lazy">
+    <div>
+      <h2>Commandez, on s'occupe du reste</h2>
+      <p>Un appel pour passer commande, une heure de retrait, et votre pizza vous attend au 10 rue de Quimper, dans le bourg de Pouldreuzic.</p>
+      <div class="btns" style="margin-top:18px">
+        <a class="btn main" href="tel:+33298506523">02 98 50 65 23</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="infos" id="infos">
+  <div class="wrap">
+    <div>
+      <h2>Horaires</h2>
+      <div class="hours-box">
+        <strong>Le soir, dès 17h30</strong>
+        <p>Les jours d'ouverture et les éventuelles fermetures pour congés sont annoncés sur Facebook.</p>
+        <p><a href="https://www.facebook.com/p/Le-soledo-100083346770325/">Voir les horaires du moment</a></p>
+      </div>
+    </div>
+    <div>
+      <h2>Nous trouver</h2>
+      <address>Le Soledo<br>10 rue de Quimper<br>29710 Pouldreuzic</address>
+      <div class="links">
+        <a href="tel:+33298506523">02 98 50 65 23</a>
+        <a href="https://www.facebook.com/p/Le-soledo-100083346770325/">Facebook</a>
+        <a href="https://www.openstreetmap.org/node/7843769896">Plan OpenStreetMap</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Le+Soledo+10+Rue+de+Quimper+29710+Pouldreuzic">Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Le Soledo, pizzas et paninis à Pouldreuzic</div>
+    <nav><a href="#mentions">Mentions légales</a><a href="#mentions">Confidentialité</a></nav>
+    <div id="mentions">Mentions légales et confidentialité. Éditeur : Le Soledo, 10 rue de Quimper, 29710 Pouldreuzic. SIREN, directeur de la publication et hébergeur : à compléter. Ce site ne dépose aucun cookie et ne collecte aucune donnée personnelle ; les polices sont chargées depuis Google Fonts.</div>
+    <div class="credit">Maquette non officielle. Démo réalisée par Avel, développeur web.</div>
+  </div>
+</footer>
+</body>
+</html>

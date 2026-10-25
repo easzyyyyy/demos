@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Le Quincy, brasserie face au port de Lesconil</title>
+<meta name="description" content="Le Quincy, brasserie de bord de mer à Lesconil, 11 rue du Port : cuisine faite maison, produits soigneusement travaillés, terrasse face au port.">
+<!--
+  Photos : Unsplash (licence Unsplash, usage libre)
+  hero.jpg    https://unsplash.com/photos/AOy0hibZK0w (Chris King)
+  plateau.jpg https://unsplash.com/photos/2xd9c6jQhGs (Vitalii Kyktov)
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#16283d; --navy-2:#1f3a57; --sail:#f2eee6; --sand:#e6dccb; --rope:#c6a46a;
+  --sea:#3d6f8e; --ink:#1a2330; --muted:#5b6673;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--sail);color:var(--ink);font:400 1.03rem/1.62 Barlow,system-ui,sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.04;margin:0 0 .4em}
+.label{font:600 .86rem/1 "Barlow Condensed",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--rope)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+
+header{background:var(--navy);color:var(--sail)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px}
+header b{font:400 1.45rem "DM Serif Display",serif}
+header a{font-weight:600;text-decoration:none;border:1px solid var(--rope);padding:7px 12px}
+
+.hero{background:var(--navy);color:var(--sail);padding-bottom:0}
+.hero .wrap{padding-top:26px;padding-bottom:34px}
+.hero h1{font-size:clamp(2.6rem,10vw,5.2rem);max-width:13ch;margin-top:14px}
+.hero h1 em{color:var(--rope)}
+.hero p{max-width:44ch;font-size:1.12rem;color:#cdd6e0;margin:0 0 24px}
+.hero .pic{height:48vh;min-height:280px;background:url(assets/hero.jpg) center 60%/cover}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:13px 22px;font-weight:600;text-decoration:none}
+.btn.main{background:var(--rope);color:var(--navy)}
+.btn.main:hover{background:#d8b77d}
+.btn.line{border:1px solid #8ea2b8;color:var(--sail)}
+.btn.line:hover{border-color:var(--sail)}
+
+section{padding:62px 0}
+.maison .wrap{display:grid;gap:34px}
+.maison h2{font-size:clamp(2rem,6vw,3rem);color:var(--navy)}
+.maison .quote{font:italic 400 1.4rem/1.45 "DM Serif Display",serif;color:var(--navy-2);border-left:3px solid var(--rope);padding-left:18px;margin:0 0 20px;max-width:34ch}
+.maison p{max-width:52ch}
+.offer{border-top:2px solid var(--navy)}
+.offer div{padding:16px 0;border-bottom:1px solid #d3c9b7;display:grid;grid-template-columns:120px 1fr;gap:12px}
+.offer span{font:600 .9rem/1.5 "Barlow Condensed",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--sea)}
+
+.terrasse{background:var(--sand)}
+.terrasse .wrap{display:grid;gap:30px;align-items:center}
+.terrasse h2{font-size:clamp(1.8rem,5vw,2.6rem);color:var(--navy)}
+.terrasse p{max-width:46ch}
+
+.infos{background:var(--navy);color:var(--sail)}
+.infos .wrap{display:grid;gap:36px}
+.infos h2{font-size:2rem}
+.infos p{color:#cdd6e0;max-width:42ch}
+address{font-style:normal;font-size:1.1rem;margin:10px 0 18px}
+.links a{display:inline-block;margin:0 18px 10px 0;font-weight:600;text-underline-offset:4px;text-decoration-color:var(--rope)}
+
+footer{background:#0f1d2d;color:#8e9bab;padding:26px 0 32px;font-size:.88rem}
+footer nav a{margin-right:16px}
+#mentions{margin-top:12px;font-size:.82rem}
+.credit{margin-top:10px;font-size:.78rem}
+
+@media (min-width:860px){
+  .hero{display:grid;grid-template-columns:1fr 1.15fr}
+  .hero .wrap{padding:70px 40px 70px max(18px,calc(50vw - 550px));align-self:center;max-width:none;margin:0}
+  .hero .pic{height:auto;min-height:560px}
+  .maison .wrap{grid-template-columns:1fr 1fr;align-items:start}
+  .terrasse .wrap{grid-template-columns:1fr 1.1fr}
+  .infos .wrap{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <b>Le Quincy</b>
+    <a href="tel:+33298549409">02 98 54 94 09</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="label">Brasserie, port de Lesconil</div>
+    <h1>Face au port, <em>une cuisine maison</em></h1>
+    <p>Une brasserie de bord de mer, simple et conviviale, au 11 rue du Port. On y vient pour un repas, un verre en terrasse ou un cocktail en regardant les bateaux.</p>
+    <div class="btns">
+      <a class="btn main" href="tel:+33298549409">Réserver une table</a>
+      <a class="btn line" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Quincy+11+Rue+du+Port+29740+Lesconil">Itinéraire</a>
+    </div>
+  </div>
+  <div class="pic" role="img" aria-label="Bateaux de pêche amarrés dans un port"></div>
+</div>
+
+<section class="maison">
+  <div class="wrap">
+    <div>
+      <div class="label">La maison</div>
+      <h2>Fait maison, au fil des arrivages</h2>
+      <p class="quote">Cuisine faite maison, produits soigneusement travaillés, un lieu simple, convivial et authentique face au port.</p>
+      <p>C'est ainsi que Le Quincy se présente sur sa page. La carte suit les produits du moment ; elle est donnée sur place et par téléphone.</p>
+    </div>
+    <div class="offer">
+      <div><span>En salle</span><p style="margin:0">Plats de brasserie cuisinés sur place, à partir de produits frais.</p></div>
+      <div><span>Au bar</span><p style="margin:0">Boissons, apéritifs et cocktails, en salle ou en terrasse.</p></div>
+      <div><span>Soirées</span><p style="margin:0">Des soirées à thème sont organisées au fil de l'année et annoncées sur Facebook.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="terrasse">
+  <div class="wrap">
+    <img src="assets/plateau.jpg" alt="Plateau de fruits de mer" width="900" height="600" loading="lazy">
+    <div>
+      <h2>Une terrasse côté quai</h2>
+      <p>Aux beaux jours, la terrasse donne directement sur le port de Lesconil. Pour une grande tablée ou un soir de week-end, mieux vaut appeler avant de venir.</p>
+      <div class="btns" style="margin-top:18px">
+        <a class="btn main" href="tel:+33298549409">Appeler Le Quincy</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="infos" id="infos">
+  <div class="wrap">
+    <div>
+      <div class="label">Horaires</div>
+      <h2>Jusqu'à 22h30</h2>
+      <p>Service jusqu'en soirée, fermeture vers 22h30. Les jours d'ouverture changent selon la saison : ils sont tenus à jour sur Facebook et Instagram, ou par téléphone.</p>
+    </div>
+    <div>
+      <div class="label">Adresse</div>
+      <address>Le Quincy<br>11 rue du Port<br>29740 Plobannalec-Lesconil</address>
+      <div class="links">
+        <a href="tel:+33298549409">02 98 54 94 09</a>
+        <a href="https://www.facebook.com/profile.php?id=61570674086104">Facebook</a>
+        <a href="https://www.instagram.com/lequincylesco/">Instagram</a>
+        <a href="https://www.openstreetmap.org/node/5609373364">Plan OpenStreetMap</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Le+Quincy+11+Rue+du+Port+29740+Lesconil">Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Le Quincy, brasserie de bord de mer à Lesconil</div>
+    <nav><a href="#mentions">Mentions légales</a><a href="#mentions">Confidentialité</a></nav>
+    <div id="mentions">Mentions légales et confidentialité. Éditeur : Le Quincy, 11 rue du Port, 29740 Plobannalec-Lesconil. SIREN, directeur de la publication et hébergeur : à compléter. Ce site ne dépose aucun cookie et ne collecte aucune donnée personnelle ; les polices sont chargées depuis Google Fonts.</div>
+    <div class="credit">Maquette non officielle. Démo réalisée par Avel, développeur web.</div>
+  </div>
+</footer>
+</body>
+</html>

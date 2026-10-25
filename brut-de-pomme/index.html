@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Brut de Pomme, crêperie et cave à cidre à Pont-l'Abbé</title>
+<meta name="description" content="Brut de Pomme, 2 rue Burdeau à Pont-l'Abbé : crêpes maison, cave à cidre et produits locaux du Pays bigouden. Réservation par téléphone.">
+<!--
+  Photos : Unsplash (licence Unsplash, usage libre)
+  hero.jpg  https://unsplash.com/photos/wXuzS9xR49M (Matheus Cenali)
+  crepe.jpg https://unsplash.com/photos/jsgJtBOR6jY (Monika Grabkowska)
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,800;1,500&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --linen:#f6efe2; --oat:#ecdfc8; --cider:#c98a2b; --cider-l:#e7b866; --apple:#5e7a2e;
+  --cask:#6e2a22; --cask-d:#4d1c17; --ink:#2b211b; --muted:#6c5f52;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--linen);color:var(--ink);font:400 1.06rem/1.6 "Alegreya Sans",system-ui,sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Alegreya,Georgia,serif;line-height:1.05;margin:0 0 .4em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+
+.top{background:var(--cask);color:var(--linen)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:13px;padding-bottom:13px}
+.top b{font:800 1.35rem Alegreya,serif;letter-spacing:.01em}
+.top a{font-weight:700;text-decoration:none;color:var(--cider-l)}
+
+.hero{display:grid;background:var(--cask);color:var(--linen)}
+.hero .pic{height:42vh;min-height:250px;background:url(assets/hero.jpg) center/cover}
+.hero .txt{padding:32px 18px 40px}
+.hero .sub{font:italic 500 1.15rem Alegreya,serif;color:var(--cider-l)}
+.hero h1{font-weight:800;font-size:clamp(2.6rem,10vw,5rem);margin:10px 0 16px}
+.hero p{max-width:40ch;margin:0 0 24px;color:#e9d9c6}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:13px 22px;font-weight:700;text-decoration:none;border-radius:3px}
+.btn.main{background:var(--cider);color:var(--cask-d)}
+.btn.main:hover{background:var(--cider-l)}
+.btn.line{border:2px solid #b98b7d;color:var(--linen)}
+.btn.line:hover{border-color:var(--linen)}
+
+section{padding:60px 0}
+.duo .wrap{display:grid;gap:36px}
+.duo h2{font-weight:800;font-size:clamp(2rem,6vw,2.9rem);color:var(--cask)}
+.duo .col p{max-width:46ch}
+.duo .col h3{font-weight:800;font-size:1.5rem;color:var(--apple);margin-top:22px}
+.duo img{max-height:600px;object-fit:cover;width:100%;border-radius:3px}
+
+.cave{background:var(--oat)}
+.cave .wrap{display:grid;gap:26px}
+.cave h2{font-weight:800;font-size:clamp(1.9rem,5vw,2.6rem);color:var(--cask)}
+.cave p{max-width:58ch;margin:0}
+.cave .chips{display:flex;flex-wrap:wrap;gap:8px}
+.cave .chips span{border:1px solid var(--cider);padding:6px 12px;border-radius:999px;font-size:.92rem;background:var(--linen)}
+
+.infos .wrap{display:grid;gap:36px}
+.infos h2{font-weight:800;font-size:1.9rem;color:var(--cask)}
+table{border-collapse:collapse;width:100%;max-width:420px}
+td{padding:9px 2px;border-bottom:1px solid #dccbb0}
+td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+tr.on td{color:var(--apple);font-weight:700}
+#status{font-weight:700;margin:0 0 10px;color:var(--cider)}
+.note{font-size:.9rem;color:var(--muted)}
+address{font-style:normal;font-size:1.1rem;margin:0 0 16px}
+.links a{display:inline-block;margin:0 16px 10px 0;font-weight:500;text-underline-offset:4px;text-decoration-color:var(--cider)}
+
+footer{background:var(--cask-d);color:#c7ada3;padding:28px 0 34px;font-size:.9rem}
+footer nav a{margin-right:16px}
+#mentions{margin-top:12px;font-size:.84rem}
+.credit{margin-top:10px;font-size:.8rem}
+
+@media (min-width:860px){
+  .hero{grid-template-columns:1fr 1fr;min-height:74vh}
+  .hero .txt{padding:64px 48px 64px max(18px,calc(50vw - 540px));align-self:center}
+  .hero .pic{height:auto}
+  .duo .wrap{grid-template-columns:1fr 1.1fr;align-items:center}
+  .cave .wrap{grid-template-columns:1fr 1fr;align-items:center}
+  .infos .wrap{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <b>Brut de Pomme</b>
+    <a href="tel:+33298870605">02 98 87 06 05</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="txt">
+    <div class="sub">Crêperie et cave à cidre, Pont-l'Abbé</div>
+    <h1>Crêpes maison, cidres du pays</h1>
+    <p>Au 2 rue Burdeau, des crêpes préparées sur place avec des produits locaux, et une cave pour choisir le cidre qui va avec.</p>
+    <div class="btns">
+      <a class="btn main" href="tel:+33298870605">Réserver une table</a>
+      <a class="btn line" href="https://www.google.com/maps/search/?api=1&amp;query=Brut+de+Pomme+2+Rue+Burdeau+29120+Pont-l'Abb%C3%A9">Itinéraire</a>
+    </div>
+  </div>
+  <div class="pic" role="img" aria-label="Pommes rouges"></div>
+</header>
+
+<section class="duo">
+  <div class="wrap">
+    <img src="assets/crepe.jpg" alt="Crêpes garnies servies sur une table" width="900" height="1350" loading="lazy">
+    <div class="col">
+      <h2>À la crêperie</h2>
+      <p>Des recettes gourmandes, salées et sucrées, faites maison avec les produits du Pays bigouden. La carte change avec les saisons et les nouveautés sont annoncées sur Facebook.</p>
+      <h3>Galettes et crêpes salées</h3>
+      <p>Les classiques bretons et des garnitures de saison, pour un vrai repas.</p>
+      <h3>Crêpes sucrées</h3>
+      <p>Pour finir le repas ou pour une pause gourmande le midi.</p>
+      <p style="color:var(--muted);font-size:.95rem;margin-top:18px">La carte complète et les prix sont donnés sur place.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cave">
+  <div class="wrap">
+    <div>
+      <h2>La cave à cidre</h2>
+      <p>Cidres et boissons de producteurs locaux, à déguster avec votre crêpe. Demandez conseil pour trouver le vôtre, du plus doux au plus brut.</p>
+    </div>
+    <div class="chips">
+      <span>Cidres bretons</span><span>Produits locaux</span><span>Recettes maison</span><span>Terrasse</span>
+    </div>
+  </div>
+</section>
+
+<section class="infos" id="infos">
+  <div class="wrap">
+    <div>
+      <h2>Horaires</h2>
+      <p id="status"><span>Midi et soir, du mardi au samedi</span></p>
+      <table id="hours">
+        <tr data-d="1"><td>Lundi</td><td>Fermé</td></tr>
+        <tr data-d="2"><td>Mardi</td><td>12h - 14h, 19h - 21h</td></tr>
+        <tr data-d="3"><td>Mercredi</td><td>12h - 14h</td></tr>
+        <tr data-d="4"><td>Jeudi</td><td>12h - 14h, 19h - 21h</td></tr>
+        <tr data-d="5"><td>Vendredi</td><td>12h - 14h, 19h - 21h</td></tr>
+        <tr data-d="6"><td>Samedi</td><td>12h - 14h, 19h - 21h</td></tr>
+        <tr data-d="0"><td>Dimanche</td><td>Fermé</td></tr>
+      </table>
+      <p class="note">Horaires de service, à confirmer par téléphone en période de vacances.</p>
+    </div>
+    <div>
+      <h2>Nous trouver</h2>
+      <address>Brut de Pomme<br>2 rue Burdeau<br>29120 Pont-l'Abbé</address>
+      <div class="links">
+        <a href="tel:+33298870605">02 98 87 06 05</a>
+        <a href="mailto:brutdepomme29@gmail.com">brutdepomme29@gmail.com</a>
+        <a href="https://www.facebook.com/Brutdepommepontlabbe">Facebook</a>
+        <a href="https://www.openstreetmap.org/node/5535648309">Plan OpenStreetMap</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Brut+de+Pomme+2+Rue+Burdeau+29120+Pont-l'Abb%C3%A9">Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Brut de Pomme, crêperie et cave à cidre à Pont-l'Abbé</div>
+    <nav><a href="#mentions">Mentions légales</a><a href="#mentions">Confidentialité</a></nav>
+    <div id="mentions">Mentions légales et confidentialité. Éditeur : Brut de Pomme, 2 rue Burdeau, 29120 Pont-l'Abbé. SIREN, directeur de la publication et hébergeur : à compléter. Ce site ne dépose aucun cookie et ne collecte aucune donnée personnelle ; les polices sont chargées depuis Google Fonts.</div>
+    <div class="credit">Maquette non officielle. Démo réalisée par Avel, développeur web.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var now=new Date(),d=now.getDay(),r=document.querySelector('#hours tr[data-d="'+d+'"]');
+  if(r)r.className='on';
+  var m=now.getHours()*60+now.getMinutes();
+  var lunch=d>=2&&d<=6&&m>=720&&m<840;
+  var dinner=(d===2||(d>=4&&d<=6))&&m>=1140&&m<1260;
+  var el=document.querySelector('#status span');
+  if(el)el.textContent=(lunch||dinner)?'Ouvert en ce moment':'Fermé en ce moment';
+})();
+</script>
+</body>
+</html>

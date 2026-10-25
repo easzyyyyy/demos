@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>La Pinsetta, pinsa et pizzas à Quimper</title>
+<meta name="description" content="La Pinsetta, restaurant italien au 1 rue Jean Jaurès à Quimper : pinsa, pizzas, pâtes et crèmes brûlées maison. Ouvert du jeudi au lundi, à partir de 16h.">
+<!--
+  Photos : Unsplash (licence Unsplash, usage libre)
+  four.jpg  https://unsplash.com/photos/KN9FYaoAAik
+  pinsa.jpg https://unsplash.com/photos/hbNOsm2eM1M
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600;1,800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f5eedf;--tomato:#b8352a;--tomato-2:#962a21;--basil:#2f5d3a;--ink:#2a1d17;--muted:#6c5d52;--line:#dccdb2}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 1.03rem/1.6 Barlow,system-ui,sans-serif;padding-bottom:62px}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1;margin:0 0 .35em}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+
+.top{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.top .n{font:italic 800 1.7rem/1 "Playfair Display",serif;color:var(--tomato);text-decoration:none}
+.top a.t{font-weight:700;text-decoration:none}
+
+.hero{position:relative;color:#fbf3e4;overflow:hidden}
+.hero img{width:100%;height:76vh;min-height:460px;max-height:700px;object-fit:cover;filter:brightness(.62)}
+.hero .in{position:absolute;inset:auto 0 0 0;padding:0 18px 34px}
+.hero h1{font-size:clamp(3rem,13vw,6.6rem);font-style:italic;font-weight:800}
+.hero p{max-width:34ch;font-size:1.12rem;margin:0 0 20px;color:#f1e4cf}
+.btn{display:inline-block;padding:14px 22px;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:.06em;font-size:.9rem}
+.btn-r{background:var(--tomato);color:#fff6ea}
+.btn-r:hover{background:var(--tomato-2)}
+.btn-c{background:var(--cream);color:var(--ink)}
+.btn-line{border:2px solid var(--ink)}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+
+.section{padding:58px 0}
+.section h2{font-size:clamp(2.2rem,8vw,3.6rem);color:var(--tomato)}
+.lead{max-width:56ch;font-size:1.1rem}
+.menu{display:grid;gap:0;margin-top:24px;border-top:2px solid var(--ink)}
+.dish{display:grid;grid-template-columns:1fr;gap:4px;padding:18px 0;border-bottom:1px solid var(--line)}
+.dish h3{font-size:1.6rem;font-style:italic;font-weight:600}
+.dish p{margin:0;color:var(--muted)}
+.menu-side img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.menu-grid{display:grid;gap:30px}
+
+.hours{background:var(--basil);color:#e6efe3;padding:52px 0}
+.hours h2{font-size:clamp(2.2rem,8vw,3.4rem);color:#f5eedf}
+.hours table{width:100%;max-width:520px;border-collapse:collapse;font-size:1.08rem}
+.hours td{padding:10px 0;border-bottom:1px solid #4d7a57}
+.hours td:last-child{text-align:right}
+.hours tr.today td{color:#ffd9a8;font-weight:700}
+.hours .small{font-size:.9rem;color:#bcd0bd;margin-top:14px}
+
+.visit .grid{display:grid;gap:26px}
+address{font-style:normal;font-size:1.12rem;margin-bottom:14px}
+
+footer{border-top:2px solid var(--ink);padding:26px 0 22px;font-size:.88rem;color:var(--muted)}
+footer .r{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px}
+footer nav{display:flex;gap:16px}
+#mentions{margin-top:14px;font-size:.82rem}
+.credit{font-size:.78rem;margin-top:10px}
+
+.callbar{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--tomato);z-index:5}
+.callbar a{flex:1;text-align:center;padding:15px 8px;color:#fff6ea;font-weight:700;text-decoration:none;text-transform:uppercase;font-size:.88rem;letter-spacing:.05em}
+.callbar a+a{border-left:1px solid #8f2820}
+
+@media (min-width:860px){
+  body{padding-bottom:0}
+  .callbar{display:none}
+  .hero .in{padding:0 0 56px;left:max(18px,calc((100vw - 1100px)/2 + 18px))}
+  .menu-grid{grid-template-columns:1.3fr 1fr;align-items:start}
+  .dish{grid-template-columns:220px 1fr;align-items:baseline}
+  .visit .grid{grid-template-columns:1fr 1fr;align-items:center}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="n" href="#">La Pinsetta</a>
+    <a class="t" href="tel:+33298824886">02 98 82 48 86</a>
+  </header>
+</div>
+
+<section class="hero">
+  <img src="assets/four.jpg" alt="Pizza qui sort du four" width="1400" height="933">
+  <div class="in">
+    <h1>Pinsa e pizza</h1>
+    <p>Restaurant italien au 1 rue Jean Jaurès, à Quimper. Sur place, à emporter, ou livré.</p>
+    <div class="btns">
+      <a class="btn btn-r" href="tel:+33298824886">Commander par téléphone</a>
+      <a class="btn btn-c" href="#horaires">Horaires</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap menu-grid">
+    <div>
+      <h2>La carte</h2>
+      <p class="lead">La pinsa, cousine romaine de la pizza à pâte légère et croustillante, côtoie les pizzas classiques, les pâtes et les desserts faits maison.</p>
+      <div class="menu">
+        <div class="dish"><h3>Pinsa</h3><p>La spécialité de la maison, garnie de produits italiens.</p></div>
+        <div class="dish"><h3>Pizzas</h3><p>Les grandes recettes, cuites au four.</p></div>
+        <div class="dish"><h3>Pâtes</h3><p>Plats de pâtes à l'italienne.</p></div>
+        <div class="dish"><h3>Crème brûlée</h3><p>Le dessert maison, préparé sur place.</p></div>
+      </div>
+    </div>
+    <div class="menu-side"><img src="assets/pinsa.jpg" alt="Pinsa garnie sur une planche" loading="lazy" width="933" height="1400"></div>
+  </div>
+</section>
+
+<section class="hours" id="horaires">
+  <div class="wrap">
+    <h2>Horaires</h2>
+    <table id="hours">
+      <tr data-d="1"><td>Lundi</td><td>16h à 23h</td></tr>
+      <tr data-d="2"><td>Mardi</td><td>Fermé</td></tr>
+      <tr data-d="3"><td>Mercredi</td><td>Fermé</td></tr>
+      <tr data-d="4"><td>Jeudi</td><td>16h à 23h</td></tr>
+      <tr data-d="5"><td>Vendredi</td><td>16h à 23h</td></tr>
+      <tr data-d="6"><td>Samedi</td><td>16h à minuit</td></tr>
+      <tr data-d="0"><td>Dimanche</td><td>16h à 23h</td></tr>
+    </table>
+    <p class="small">Horaires annoncés à la réouverture, à vérifier sur la page Facebook ou par téléphone.</p>
+  </div>
+</section>
+
+<section class="section visit">
+  <div class="wrap grid">
+    <div>
+      <h2>Venir</h2>
+      <address>La Pinsetta<br>1 rue Jean Jaurès<br>29000 Quimper</address>
+      <p><a href="tel:+33298824886">02 98 82 48 86</a></p>
+    </div>
+    <div class="btns">
+      <a class="btn btn-r" href="tel:+33298824886">Appeler</a>
+      <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=La+Pinsetta+1+rue+Jean+Jaur%C3%A8s+29000+Quimper">Itinéraire</a>
+      <a class="btn btn-line" href="https://www.instagram.com/la_pinsetta_quimper/">Instagram</a>
+      <a class="btn btn-line" href="https://www.facebook.com/61583976564931">Facebook</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="r">
+      <span>La Pinsetta, 1 rue Jean Jaurès, 29000 Quimper</span>
+      <nav><a href="#mentions">Mentions légales</a><a href="#mentions">Confidentialité</a></nav>
+    </div>
+    <div id="mentions">Mentions légales et confidentialité. Éditeur : La Pinsetta, 1 rue Jean Jaurès, 29000 Quimper. SIRET, directeur de la publication et hébergeur : à compléter. Ce site ne dépose aucun cookie et ne collecte aucune donnée personnelle ; les polices sont chargées depuis Google Fonts.</div>
+    <p class="credit">Maquette non officielle. Démo réalisée par Avel, développeur web.</p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Contact rapide">
+  <a href="tel:+33298824886">Commander</a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=La+Pinsetta+1+rue+Jean+Jaur%C3%A8s+29000+Quimper">Itinéraire</a>
+</nav>
+<script>
+(function(){var r=document.querySelector('#hours tr[data-d="'+new Date().getDay()+'"]');if(r)r.className='today';})();
+</script>
+</body>
+</html>
