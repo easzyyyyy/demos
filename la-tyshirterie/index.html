@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>La Tyshirterie, marquage textile à Pont-l'Abbé</title>
+<meta name="description" content="Marquage textile et broderie à Pont-l'Abbé depuis 2013 : tee-shirts, sweats, tenues de club et d'entreprise.">
+<!--
+  Photos : Unsplash (licence Unsplash, usage libre)
+  hero.jpg     https://unsplash.com/photos/GUdUmJua9cI
+  broderie.jpg https://unsplash.com/photos/KAMaLRggG9g
+  ecran.jpg    https://unsplash.com/photos/ZCTh4f4mv18
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f1ede4; --paper-2:#e6e0d3; --ink:#161616; --muted:#55524b;
+  --yellow:#f2c230; --blue:#1f4e8c; --line:#161616;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.05rem/1.6 "IBM Plex Sans",system-ui,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;line-height:.98;margin:0 0 .45em;letter-spacing:.005em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+
+.bar{border-bottom:2px solid var(--line)}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:14px;padding-bottom:14px}
+.brand{font-family:Anton,sans-serif;font-size:1.5rem;text-transform:uppercase;text-decoration:none}
+.brand span{background:var(--yellow);padding:0 .15em}
+.bar a.tel{font-weight:700;text-decoration:none;white-space:nowrap}
+
+.hero{display:grid;border-bottom:2px solid var(--line)}
+.hero .txt{padding:36px 18px 40px}
+.hero h1{font-size:clamp(2.9rem,11vw,6.2rem);line-height:1.06}
+.hero h1 em{font-style:normal;background:var(--yellow);padding:0 .08em}
+.hero p{max-width:40ch;font-size:1.12rem;margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:14px 20px;font-weight:700;text-decoration:none;border:2px solid var(--ink)}
+.btn.y{background:var(--yellow)}
+.btn.y:hover{background:var(--ink);color:var(--yellow)}
+.btn.o:hover{background:var(--ink);color:var(--paper)}
+.hero .pic{min-height:300px;background:#222}
+.hero .pic img{width:100%;height:100%;object-fit:cover}
+
+.since{display:flex;flex-wrap:wrap;gap:6px 26px;padding-top:16px;padding-bottom:16px}
+.since b{font-family:Anton,sans-serif;font-weight:400;font-size:1.4rem}
+
+.section{padding:56px 0}
+.section h2{font-size:clamp(2.1rem,6vw,3.4rem)}
+.svc{border-top:2px solid var(--line)}
+.svc-row{display:grid;gap:6px 30px;padding:20px 0;border-bottom:2px solid var(--line)}
+.svc-row .n{font-family:"IBM Plex Mono",monospace;color:var(--blue);font-weight:500}
+.svc-row h3{font:700 1.3rem/1.2 "IBM Plex Sans",sans-serif;margin:0}
+.svc-row p{margin:0;color:var(--muted);max-width:56ch}
+
+.who{background:var(--ink);color:var(--paper)}
+.who .wrap{display:grid;gap:30px;padding-top:56px;padding-bottom:56px}
+.who h2{color:var(--yellow)}
+.who img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.who .names{font-size:1.25rem;font-weight:700}
+.who p{max-width:52ch}
+
+.steps{counter-reset:s;display:grid;gap:0;margin:24px 0 0;padding:0;list-style:none;border-left:2px solid var(--line)}
+.steps li{counter-increment:s;padding:12px 0 12px 22px;position:relative}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:"IBM Plex Mono",monospace;color:var(--blue);display:block;font-size:.85rem}
+.devis{background:var(--yellow);border:2px solid var(--ink);padding:26px 22px;margin-top:34px}
+.devis h3{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:1.8rem;margin:0 0 8px}
+.devis p{margin:0 0 16px;max-width:52ch}
+.devis .btn{background:var(--ink);color:var(--yellow)}
+.devis .btn.o{background:transparent;color:var(--ink)}
+
+.visit{display:grid;gap:26px}
+.visit address{font-style:normal;font-size:1.15rem;font-weight:700}
+.visit .note{border-left:4px solid var(--blue);padding-left:14px;color:var(--muted);font-size:.95rem}
+.visit ul{list-style:none;padding:0;margin:12px 0 0}
+.visit li{padding:6px 0;border-bottom:1px solid #c8c1b2}
+.visit li a{font-weight:700}
+
+footer{border-top:2px solid var(--line);padding:30px 0 26px;font-size:.9rem}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+footer nav{display:flex;gap:18px}
+#mentions{margin-top:20px;padding-top:14px;border-top:1px solid #c8c1b2;color:var(--muted);font-size:.85rem}
+#mentions strong{color:var(--ink)}
+.credit{color:var(--muted);font-size:.8rem;margin-top:14px}
+
+@media (min-width:880px){
+  .hero{grid-template-columns:1.15fr .85fr}
+  .hero .txt{padding:64px 40px 64px 0;padding-left:max(18px,calc((100vw - 1180px)/2 + 18px))}
+  .hero .pic{border-left:2px solid var(--line)}
+  .svc-row{grid-template-columns:70px 1fr 1.4fr;align-items:baseline}
+  .who .wrap{grid-template-columns:1fr 1fr;align-items:center}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+  .visit{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#">La <span>Tyshirterie</span></a>
+    <a class="tel" href="tel:+33298907093">02 98 90 70 93</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="txt">
+    <div class="mono">Pont-l'Abbé, Finistère</div>
+    <h1>Votre nom,<br>votre logo, <em>sur tout</em> textile.</h1>
+    <p>Marquage textile et broderie depuis 2013. Tee-shirts d'équipe, tenues de travail, cadeaux, petites et grandes séries, faits en Bretagne.</p>
+    <div class="btns">
+      <a class="btn y" href="mailto:info@latyshirterie.bzh?subject=Demande%20de%20devis">Demander un devis</a>
+      <a class="btn o" href="tel:+33298907093">Appeler l'atelier</a>
+    </div>
+  </div>
+  <div class="pic"><img src="assets/hero.jpg" alt="Encres de couleur sur un écran de sérigraphie" width="1400" height="933" fetchpriority="high"></div>
+</section>
+
+<div class="wrap since mono">
+  <span><b>2013</b> premier tee-shirt marqué</span>
+  <span><b>1</b> atelier à Pont-l'Abbé</span>
+  <span><b>3</b> personnes pour vous répondre</span>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="mono">Ce qu'on fait</div>
+    <h2>Marquage et broderie</h2>
+    <div class="svc">
+      <div class="svc-row"><span class="n">01</span><h3>Personnalisation textile</h3><p>Tee-shirts, sweats, polos, tabliers : votre visuel imprimé sur le support choisi, de la pièce unique à la série.</p></div>
+      <div class="svc-row"><span class="n">02</span><h3>Broderie</h3><p>Logo brodé sur polos, vestes et casquettes, pour une tenue d'entreprise qui tient dans le temps.</p></div>
+      <div class="svc-row"><span class="n">03</span><h3>Clubs et associations</h3><p>Tenues d'équipe, maillots, sweats de club ou d'école de voile : on prépare la commande avant la saison.</p></div>
+      <div class="svc-row"><span class="n">04</span><h3>Événements et cadeaux</h3><p>Enterrement de vie, fête de famille, départ en retraite : un textile marqué pour garder un souvenir.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="who">
+  <div class="wrap">
+    <div>
+      <div class="mono">L'équipe</div>
+      <h2>Une équipe jeune et dynamique</h2>
+      <p class="names">Olivier, Christelle et Anne</p>
+      <p>La Tyshirterie change de mains et garde son savoir-faire. Même atelier, même adresse, et une nouvelle équipe prête à reprendre vos commandes habituelles comme les nouveaux projets.</p>
+    </div>
+    <img src="assets/broderie.jpg" alt="Bobines de fil à broder de différentes couleurs" width="900" height="601">
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two">
+    <div>
+      <div class="mono">Comment ça se passe</div>
+      <h2>De l'idée au carton</h2>
+      <ol class="steps">
+        <li>Vous envoyez votre logo ou votre idée, avec les quantités et les tailles.</li>
+        <li>On vous propose les textiles, la technique et un devis.</li>
+        <li>Vous validez le visuel avant le lancement.</li>
+        <li>Vous récupérez votre commande à l'atelier.</li>
+      </ol>
+    </div>
+    <div>
+      <img src="assets/ecran.jpg" alt="Atelier de sérigraphie avec une raclette sur un écran" width="900" height="600" loading="lazy">
+      <div class="devis">
+        <h3>Un projet ?</h3>
+        <p>Écrivez-nous avec votre visuel, le nombre de pièces et la date souhaitée. On revient vers vous avec un devis.</p>
+        <div class="btns">
+          <a class="btn" href="mailto:info@latyshirterie.bzh?subject=Demande%20de%20devis">info@latyshirterie.bzh</a>
+          <a class="btn o" href="tel:+33298907093">02 98 90 70 93</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap visit">
+    <div>
+      <div class="mono">L'atelier</div>
+      <h2>Passer nous voir</h2>
+      <address>35 rue Guy le Garrec<br>29120 Pont-l'Abbé</address>
+      <p>Au rond-point du Biocoop. Horaires d'ouverture : nous appeler.</p>
+      <p class="note">La Tyshirterie est installée à Pont-l'Abbé uniquement. Une autre enseigne au nom proche existe à Penmarc'h, sans lien avec l'atelier.</p>
+    </div>
+    <ul>
+      <li><a href="https://www.openstreetmap.org/search?query=35%20rue%20Guy%20le%20Garrec%2029120%20Pont-l%27Abb%C3%A9" target="_blank" rel="noopener">Voir sur la carte</a></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&query=La%20Tyshirterie%2035%20rue%20Guy%20le%20Garrec%20Pont-l%27Abb%C3%A9" target="_blank" rel="noopener">Itinéraire Google Maps</a></li>
+      <li><a href="https://www.facebook.com/latyshirterie" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="mailto:info@latyshirterie.bzh">info@latyshirterie.bzh</a></li>
+      <li><a href="tel:+33298907093">02 98 90 70 93</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <span>La Tyshirterie, 35 rue Guy le Garrec, Pont-l'Abbé</span>
+      <nav><a href="#mentions">Mentions légales</a><a href="#mentions">Confidentialité</a></nav>
+    </div>
+    <div id="mentions">
+      <strong>Mentions légales et confidentialité.</strong> Éditeur : Imaginer (La Tyshirterie), 35 rue Guy le Garrec, 29120 Pont-l'Abbé. SIREN, directeur de la publication et hébergeur : à compléter. Ce site ne dépose aucun cookie et ne collecte aucune donnée personnelle ; les polices sont chargées depuis Google Fonts.
+    </div>
+    <p class="credit">Maquette non officielle. Démo réalisée par Avel, développeur web.</p>
+  </div>
+</footer>
+</body>
+</html>

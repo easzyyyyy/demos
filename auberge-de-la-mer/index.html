@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>L'Auberge de la Mer, Kerfany, Moëlan-sur-Mer</title>
+<meta name="description" content="Bar et restaurant face à la plage de Kerfany à Moëlan-sur-Mer. Terrasse, salles avec vue sur l'océan pour mariages, repas de groupe et séminaires.">
+<!--
+  Photos : Unsplash (licence Unsplash, usage libre)
+  hero.jpg     https://unsplash.com/photos/1kCxZM4oX0o
+  plateau.jpg  https://unsplash.com/photos/v1_CnQLZKvA
+  assiette.jpg https://unsplash.com/photos/qft0cj-wdF0
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sand:#f1ebe0; --sand-2:#e5dccb; --deep:#173f45; --teal:#2e6b6f; --ink:#1d2a2c;
+  --muted:#5b6564; --kelp:#b5863f;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--sand);color:var(--ink);font:400 1.04rem/1.6 "Source Sans 3",system-ui,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.05;margin:0 0 .4em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--kelp)}
+
+.hero{position:relative;min-height:88vh;display:flex;flex-direction:column;color:#f6f1e8;background:var(--deep)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.72}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,63,69,.55) 0%,rgba(23,63,69,0) 35%,rgba(23,63,69,.75) 100%)}
+.hero>*{position:relative;z-index:1}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 20px;max-width:1120px;width:100%;margin:0 auto}
+.logo{text-decoration:none;font-family:"DM Serif Display",serif;font-size:1.35rem}
+.nav a.tel{text-decoration:none;font-weight:700}
+.hero .txt{margin-top:auto;padding:0 20px 44px;max-width:1120px;width:100%;margin-left:auto;margin-right:auto}
+.hero .eyebrow{color:#e9cf9a}
+.hero h1{font-size:clamp(2.8rem,9vw,5.6rem);max-width:12ch}
+.hero h1 i{color:#e9cf9a}
+.hero p{max-width:40ch;font-size:1.15rem;margin:0 0 24px;color:#ece5d8}
+.btn{display:inline-block;padding:14px 22px;font-weight:700;text-decoration:none;border-radius:3px}
+.btn-s{background:var(--sand);color:var(--deep)}
+.btn-s:hover{background:#fff8ec}
+.btn-l{border:1.5px solid #e9e0cf;color:#f6f1e8}
+.btn-d{background:var(--deep);color:var(--sand)}
+.btn-d:hover{background:var(--teal)}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+
+.section{padding:64px 0}
+.section h2{font-size:clamp(2rem,5vw,3.1rem);color:var(--deep)}
+.lede{max-width:58ch;color:var(--muted);font-size:1.08rem}
+
+.table{display:grid;gap:30px;margin-top:30px}
+.table figure{margin:0}
+.table img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.table figure.sm img{aspect-ratio:3/2}
+.table figcaption{font-size:.9rem;color:var(--muted);margin-top:8px}
+.table .copy p{max-width:44ch}
+.table ul{margin:14px 0 0;padding-left:1.1em}
+.table li{margin-bottom:6px}
+
+.rooms{background:var(--deep);color:var(--sand)}
+.rooms h2{color:var(--sand)}
+.rooms .lede{color:#c6d3d1}
+.room-list{margin-top:30px;border-top:1px solid #3c6a6e}
+.room{display:grid;grid-template-columns:auto 1fr;gap:4px 20px;padding:18px 0;border-bottom:1px solid #3c6a6e;align-items:baseline}
+.room .cap{font-family:"DM Serif Display",serif;font-size:2.3rem;color:#e9cf9a;line-height:1;grid-row:span 2}
+.room .cap small{font:600 .8rem/1 "Source Sans 3",sans-serif;color:#c6d3d1;margin-left:4px}
+.room b{font-size:1.1rem}
+.room span{color:#c6d3d1}
+.events{margin-top:28px;color:#dbe3e1}
+.events strong{color:var(--sand)}
+.fine{font-size:.9rem;color:#a9bcba;margin-top:12px}
+
+.visit{display:grid;gap:30px}
+.visit address{font-style:normal;font-size:1.15rem;margin-bottom:12px}
+.visit .phone{font-family:"DM Serif Display",serif;font-size:2rem;text-decoration:none;color:var(--deep)}
+.visit .small{font-size:.9rem;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px}
+.links a{font-weight:700}
+.season{background:var(--sand-2);padding:22px;border-left:4px solid var(--kelp)}
+
+footer{background:var(--ink);color:#c8cfcd;padding:30px 0 24px;font-size:.9rem}
+footer a{color:var(--sand)}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 22px}
+footer nav{display:flex;gap:18px}
+#mentions{margin-top:18px;padding-top:12px;border-top:1px solid #36494b;font-size:.84rem;color:#9fb0ad}
+.credit{font-size:.8rem;margin-top:12px;color:#8b9c9a}
+
+@media (min-width:880px){
+  .table{grid-template-columns:1fr 1fr 1fr;align-items:end}
+  .table .copy{align-self:center}
+  .rooms .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+  .visit{grid-template-columns:1fr 1fr;gap:60px}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <img src="assets/hero.jpg" alt="Plage bretonne bordée de rochers et de pins" width="1200" height="1600" fetchpriority="high">
+  <div class="nav">
+    <a class="logo" href="#">L'Auberge de la Mer</a>
+    <a class="tel" href="tel:+33981792866">09 81 79 28 66</a>
+  </div>
+  <div class="txt">
+    <div class="eyebrow">Kerfany, Moëlan-sur-Mer</div>
+    <h1>Les pieds dans le sable, <i>la table face à l'océan.</i></h1>
+    <p>Bar et restaurant au bord de la plage de Kerfany. Une terrasse pour l'apéritif, des salles avec vue sur la mer pour vos repas de fête.</p>
+    <div class="btns">
+      <a class="btn btn-s" href="tel:+33981792866">Réserver par téléphone</a>
+      <a class="btn btn-l" href="#salles">Privatiser une salle</a>
+    </div>
+  </div>
+</section>
+
+<main>
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Le restaurant</div>
+    <h2>Une cuisine de bord de mer</h2>
+    <p class="lede">Une adresse familière des promeneurs de Kerfany : on y vient pour une bière en terrasse au retour de la plage, un cocktail au coucher du soleil ou un vrai repas de fruits de mer.</p>
+    <div class="table">
+      <figure><img src="assets/plateau.jpg" alt="Plateau d'huîtres et de homard" width="900" height="1236" loading="lazy"><figcaption>Fruits de mer, selon l'arrivage.</figcaption></figure>
+      <div class="copy">
+        <h3 style="font-size:1.6rem;color:var(--deep)">Au bar et à table</h3>
+        <p>Les accras font la réputation de la maison auprès des habitués. La carte suit la saison et la pêche.</p>
+        <ul>
+          <li>Apéritif, bières et cocktails en terrasse</li>
+          <li>Accras maison</li>
+          <li>Poissons et fruits de mer</li>
+        </ul>
+      </div>
+      <figure class="sm"><img src="assets/assiette.jpg" alt="Assiette de poisson et fruits de mer" width="900" height="600" loading="lazy"><figcaption>Carte du moment au restaurant.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section rooms" id="salles">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Réceptions</div>
+      <h2>Jusqu'à 200 personnes, vue sur l'océan</h2>
+      <p class="lede">Quatre salles, dont deux face à la plage, pour un mariage, un banquet, un repas d'entreprise ou un dîner de fruits de mer entre amis.</p>
+      <p class="events"><strong>Mariages, anniversaires, repas d'association, séminaires.</strong> Contactez-nous avec la date, le nombre d'invités et le type de repas.</p>
+      <p class="fine">Soirées dansantes non proposées. Accès aux personnes à mobilité réduite à confirmer avec l'équipe.</p>
+    </div>
+    <div class="room-list">
+      <div class="room"><span class="cap">120<small>pers.</small></span><b>Grande salle</b><span>Vue sur la plage</span></div>
+      <div class="room"><span class="cap">45<small>pers.</small></span><b>Salle vue mer</b><span>Vue sur la plage</span></div>
+      <div class="room"><span class="cap">30<small>pers.</small></span><b>Salle du bar</b><span>Pour les repas en petit groupe</span></div>
+      <div class="room"><span class="cap">20<small>pers.</small></span><b>Petit salon</b><span>Pour un repas de famille</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap visit">
+    <div>
+      <div class="eyebrow">Nous trouver</div>
+      <h2>Au bout de la route de Kerfany</h2>
+      <address>23 Hent Ar Mor, Kerfany<br>29350 Moëlan-sur-Mer</address>
+      <a class="phone" href="tel:+33981792866">09 81 79 28 66</a>
+      <p class="small">Autre numéro connu : <a href="tel:+33298711187">02 98 71 11 87</a></p>
+      <div class="links">
+        <a href="https://www.openstreetmap.org/search?query=Kerfany%2029350%20Mo%C3%ABlan-sur-Mer" target="_blank" rel="noopener">Voir sur la carte</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=L%27Auberge%20de%20la%20Mer%20Kerfany%20Mo%C3%ABlan-sur-Mer" target="_blank" rel="noopener">Itinéraire Google Maps</a>
+        <a href="https://www.facebook.com/aubergedekerfany" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="season">
+      <h3 style="font-size:1.5rem;color:var(--deep)">Horaires de saison</h3>
+      <p>L'auberge vit au rythme de la plage : les horaires changent entre l'été, les vacances scolaires et l'hiver. Appelez-nous avant de venir ou pour réserver une table.</p>
+      <a class="btn btn-d" href="tel:+33981792866">Appeler l'auberge</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <span>L'Auberge de la Mer, Kerfany, Moëlan-sur-Mer</span>
+      <nav><a href="#mentions">Mentions légales</a><a href="#mentions">Confidentialité</a></nav>
+    </div>
+    <div id="mentions">Mentions légales et confidentialité. Éditeur : SARL Avelig (L'Auberge de la Mer), 23 Hent Ar Mor, 29350 Moëlan-sur-Mer. SIREN, directeur de la publication et hébergeur : à compléter. Ce site ne dépose aucun cookie et ne collecte aucune donnée personnelle ; les polices sont chargées depuis Google Fonts.</div>
+    <p class="credit">Maquette non officielle. Démo réalisée par Avel, développeur web.</p>
+  </div>
+</footer>
+</body>
+</html>

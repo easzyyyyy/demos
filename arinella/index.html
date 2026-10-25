@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>L'Arinella, restaurant à Saint-Évarzec</title>
+<meta name="description" content="Restaurant, pizzas, burgers et plats maison à Saint-Évarzec, place de l'Église. Midi et soir, sur place ou à emporter.">
+<!--
+  Photos : Unsplash (licence Unsplash, usage libre)
+  hero.jpg  https://unsplash.com/photos/766f8bfig18
+  pizza.jpg https://unsplash.com/photos/gFcf7dZqJoY
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#efe5d4; --cream-2:#e4d6bf; --brown:#3b2a20; --brown-2:#5a4132; --black:#1b1613;
+  --rust:#a8552f; --muted:#6c5a4c;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--black);font:400 1.03rem/1.6 "Work Sans",system-ui,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;margin:0 0 .4em;line-height:1.05}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+
+.hero{background:var(--brown);color:var(--cream);display:grid}
+.hero .txt{padding:22px 18px 40px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:46px}
+.logo{font:800 1.5rem/1 Fraunces,serif;font-style:italic;text-decoration:none}
+.top a.tel{text-decoration:none;font-weight:600;border-bottom:1px solid var(--rust)}
+.hero .tag{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:#d7b994;margin-bottom:12px}
+.hero h1{font-size:clamp(2.6rem,8vw,4.8rem);font-weight:600}
+.hero h1 i{font-weight:400;color:#e5b98d}
+.hero p{max-width:38ch;color:#e8dccb;font-size:1.1rem;margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:14px 22px;border-radius:4px;font-weight:600;text-decoration:none}
+.btn-r{background:var(--rust);color:#fbf3e6}
+.btn-r:hover{background:#8f4525}
+.btn-l{border:1px solid #c8a985;color:var(--cream)}
+.hero .pic img{width:100%;height:100%;object-fit:cover;max-height:520px}
+
+.today{background:var(--cream-2);border-bottom:1px solid #cdbb9f}
+.today .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;padding-top:14px;padding-bottom:14px;font-weight:500}
+.today strong{color:var(--rust)}
+
+.section{padding:58px 0}
+.section h2{font-size:clamp(2rem,5vw,3rem)}
+.intro{max-width:56ch;color:var(--muted)}
+
+.menu{display:grid;gap:34px;margin-top:28px}
+.cat h3{font-size:1.45rem;font-style:italic;font-weight:400;border-bottom:1px solid var(--brown);padding-bottom:6px;margin-bottom:14px}
+.dish{display:grid;grid-template-columns:1fr auto;gap:2px 14px;margin-bottom:16px}
+.dish b{font-weight:600}
+.dish .p{font-family:Fraunces,serif;font-weight:600;font-size:1.1rem;white-space:nowrap}
+.dish small{grid-column:1/-1;color:var(--muted);font-size:.93rem}
+.dish.star{background:var(--brown);color:var(--cream);padding:16px;border-radius:4px}
+.dish.star small{color:#d7c6ae}
+.dish.star .lbl{grid-column:1/-1;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:#e5b98d}
+.examples{margin:6px 0 0;padding-left:1.1em;color:var(--muted);font-size:.93rem}
+.note{font-size:.9rem;color:var(--muted);margin-top:8px}
+
+.strip{display:grid;gap:0;background:var(--black);color:var(--cream)}
+.strip img{width:100%;height:100%;object-fit:cover;max-height:420px}
+.strip .t{padding:40px 18px}
+.strip h2{font-size:clamp(1.9rem,4.5vw,2.7rem)}
+.strip p{color:#d9cbb6;max-width:44ch}
+
+.hours{width:100%;border-collapse:collapse}
+.hours th,.hours td{text-align:left;padding:10px 0;border-bottom:1px solid #cdbb9f;vertical-align:top}
+.hours td{text-align:right}
+.hours tr.on th,.hours tr.on td{color:var(--rust);font-weight:600}
+.find{display:grid;gap:30px}
+.find address{font-style:normal;font-size:1.15rem;margin-bottom:12px}
+.links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px}
+.links a{font-weight:600}
+
+footer{background:var(--black);color:#cbbba5;padding:32px 0 24px;font-size:.9rem}
+footer a{color:var(--cream)}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 22px}
+footer nav{display:flex;gap:18px}
+#mentions{margin-top:18px;padding-top:14px;border-top:1px solid #3d332c;font-size:.84rem;color:#a8988a}
+.credit{font-size:.8rem;color:#8d7f72;margin-top:14px}
+
+@media (min-width:880px){
+  .hero{grid-template-columns:1.1fr .9fr}
+  .hero .txt{padding:28px 44px 64px max(18px,calc((100vw - 1100px)/2 + 18px))}
+  .hero .pic img{max-height:none}
+  .menu{grid-template-columns:1fr 1fr;column-gap:56px}
+  .strip{grid-template-columns:1fr 1fr}
+  .strip .t{padding:56px 48px;align-self:center}
+  .find{grid-template-columns:1fr 1fr;gap:56px}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="txt">
+    <div class="top">
+      <a class="logo" href="#">L'Arinella</a>
+      <a class="tel" href="tel:+33256101133">02 56 10 11 33</a>
+    </div>
+    <div class="tag">Restaurant, pizzas, burgers, plats maison</div>
+    <h1>Le plaisir du fait maison, <i>midi et soir.</i></h1>
+    <p>Une cuisine maison et de saison, place de l'Église à Saint-Évarzec. Sur place ou à emporter.</p>
+    <div class="btns">
+      <a class="btn btn-r" href="tel:+33256101133">Réserver une table</a>
+      <a class="btn btn-l" href="#carte">Voir la carte</a>
+    </div>
+  </div>
+  <div class="pic"><img src="assets/hero.jpg" alt="Burger maison et frites fraîches" width="1400" height="2100" fetchpriority="high"></div>
+</section>
+
+<div class="today">
+  <div class="wrap" id="status">
+    <span>Fermé le lundi</span>
+    <span>Pensez à réserver : <strong>02 56 10 11 33</strong></span>
+  </div>
+</div>
+
+<main>
+<section class="section" id="carte">
+  <div class="wrap">
+    <h2>La carte</h2>
+    <p class="intro">Un plat du jour midi et soir, un burger du moment qui change régulièrement, des pizzas et des plats maison. Suivez la page Facebook pour l'ardoise de la semaine.</p>
+
+    <div class="menu">
+      <div class="cat">
+        <h3>Chaque jour</h3>
+        <div class="dish"><b>Plat du jour</b><span class="p">15 €</span>
+          <small>Midi et soir. Quelques ardoises récentes :</small>
+          <ul class="examples" style="grid-column:1/-1">
+            <li>Aile de raie au beurre noisette et câpres, risotto à l'encre de seiche et brocolis</li>
+            <li>Brochette d'onglet, sauce yakitori</li>
+            <li>Filet mignon</li>
+            <li>Croque-monsieur à la truffe</li>
+          </ul>
+        </div>
+        <div class="dish star"><span class="lbl">Burger du moment</span><b>Le Saturnin</b><span class="p"></span>
+          <small>Effiloché de canard confit, cheddar affiné, pickles d'oignons rouges, sauce moutarde à l'ancienne, salade, tomates.</small>
+        </div>
+      </div>
+
+      <div class="cat">
+        <h3>À la carte</h3>
+        <div class="dish"><b>Pièce de bœuf du moment</b><span class="p">20 €</span>
+          <small>Entrecôte de 220 g, sauce au poivre, frites fraîches et salade.</small></div>
+        <div class="dish"><b>Linguines carbonara</b><span class="p">14 €</span>
+          <small>Recette maison.</small></div>
+        <div class="dish"><b>Pizzas</b><span class="p">selon la carte</span>
+          <small>Sur place ou à emporter.</small></div>
+        <div class="dish"><b>Menu enfant</b><span class="p">12 €</span>
+          <small>Jusqu'à 12 ans. Bambino (petite pizza), steak haché, tenders ou jambon, avec frites fraîches, une boule de glace et une boisson.</small></div>
+        <p class="note">Prix relevés sur la page du restaurant, à confirmer sur place.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <img src="assets/pizza.jpg" alt="Pizza sortie du four" width="1000" height="667" loading="lazy">
+  <div class="t">
+    <h2>À emporter aussi</h2>
+    <p>Pizzas, burgers et plats se commandent par téléphone et se récupèrent au restaurant.</p>
+    <a class="btn btn-r" href="tel:+33256101133">Commander au 02 56 10 11 33</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap find">
+    <div>
+      <h2>Horaires</h2>
+      <table class="hours" id="hours">
+        <tr data-d="1"><th>Lundi</th><td>Fermé</td></tr>
+        <tr data-d="2"><th>Mardi</th><td>12h - 13h45<br>18h30 - 21h30</td></tr>
+        <tr data-d="3"><th>Mercredi</th><td>12h - 13h45<br>18h30 - 21h30</td></tr>
+        <tr data-d="4"><th>Jeudi</th><td>12h - 13h45<br>18h30 - 21h30</td></tr>
+        <tr data-d="5"><th>Vendredi</th><td>12h - 13h45<br>18h30 - 22h</td></tr>
+        <tr data-d="6"><th>Samedi</th><td>12h - 13h45<br>18h30 - 22h</td></tr>
+        <tr data-d="0"><th>Dimanche</th><td>10h - 13h45<br>18h30 - 22h</td></tr>
+      </table>
+    </div>
+    <div>
+      <h2>Nous trouver</h2>
+      <address>4 place de l'Église<br>29170 Saint-Évarzec</address>
+      <div class="btns">
+        <a class="btn btn-r" href="tel:+33256101133">02 56 10 11 33</a>
+        <a class="btn" style="border:1px solid var(--brown)" href="mailto:arinellabreizh@gmail.com">Écrire un mail</a>
+      </div>
+      <div class="links">
+        <a href="https://www.openstreetmap.org/search?query=4%20place%20de%20l%27%C3%89glise%2029170%20Saint-%C3%89varzec" target="_blank" rel="noopener">Voir sur la carte</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=L%27Arinella%204%20place%20de%20l%27%C3%89glise%20Saint-%C3%89varzec" target="_blank" rel="noopener">Itinéraire Google Maps</a>
+        <a href="https://www.facebook.com/restaurantarinella" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/restaurantarinella/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <span>L'Arinella, 4 place de l'Église, Saint-Évarzec</span>
+      <nav><a href="#mentions">Mentions légales</a><a href="#mentions">Confidentialité</a></nav>
+    </div>
+    <div id="mentions">Mentions légales et confidentialité. Éditeur : Arinella Breizh, 4 place de l'Église, 29170 Saint-Évarzec. SIREN, directeur de la publication et hébergeur : à compléter. Ce site ne dépose aucun cookie et ne collecte aucune donnée personnelle ; les polices sont chargées depuis Google Fonts.</div>
+    <p class="credit">Maquette non officielle. Démo réalisée par Avel, développeur web.</p>
+  </div>
+</footer>
+<script>
+(function(){
+  var now=new Date(),d=now.getDay(),r=document.querySelector('#hours tr[data-d="'+d+'"]');
+  if(r)r.className='on';
+  var m=now.getHours()*60+now.getMinutes();
+  var slots={0:[[600,825],[1110,1320]],2:[[720,825],[1110,1290]],3:[[720,825],[1110,1290]],4:[[720,825],[1110,1290]],5:[[720,825],[1110,1320]],6:[[720,825],[1110,1320]]}[d]||[];
+  var open=slots.some(function(s){return m>=s[0]&&m<s[1];});
+  var el=document.querySelector('#status span');
+  if(el)el.textContent=open?'Ouvert en ce moment':(d===1?'Fermé le lundi':'Fermé en ce moment');
+})();
+</script>
+</body>
+</html>

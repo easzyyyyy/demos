@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Le Fournil de Trégunc, boulangerie pâtisserie</title>
+<meta name="description" content="Boulangerie pâtisserie rue de Concarneau à Trégunc : pains, viennoiseries, pâtisseries, sandwichs, traiteur et salon de thé. Du lundi au samedi, 7h à 19h.">
+<!--
+  Photos : Unsplash (licence Unsplash, usage libre)
+  hero.jpg    https://unsplash.com/photos/N4gtuEZ5gWc
+  vitrine.jpg https://unsplash.com/photos/go3DT3PpIw4
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --flour:#f4ecdc; --flour-2:#eadcc2; --crust:#7a4a24; --crust-dk:#4f2f17; --ink:#2b2119;
+  --red:#9c3b2e; --muted:#6d5d4d;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--flour);color:var(--ink);font:400 1.04rem/1.6 Karla,system-ui,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.08;margin:0 0 .45em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;max-width:1080px;margin:0 auto}
+.logo{text-decoration:none;font-family:"Young Serif",serif;font-size:1.25rem;line-height:1.1;color:var(--crust-dk)}
+.logo small{display:block;font:500 .72rem/1.3 Karla,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.open{font-weight:700;font-size:.92rem;padding:6px 12px;border:1.5px solid var(--crust);border-radius:20px;white-space:nowrap}
+.open.yes{background:var(--crust);color:var(--flour)}
+
+.hero{position:relative}
+.hero img{width:100%;height:58vh;min-height:320px;max-height:620px;object-fit:cover}
+.hero .box{background:var(--flour);margin:-70px 14px 0;position:relative;padding:26px 20px 30px;border-top:4px solid var(--red)}
+.hero h1{font-size:clamp(2.3rem,7vw,4.2rem);color:var(--crust-dk)}
+.hero p{max-width:44ch;color:var(--muted);font-size:1.1rem;margin:0 0 22px}
+.btn{display:inline-block;padding:13px 22px;font-weight:700;text-decoration:none;border-radius:3px}
+.btn-r{background:var(--red);color:#fbf2e4}
+.btn-r:hover{background:#7f2f24}
+.btn-o{border:1.5px solid var(--crust-dk)}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+
+.section{padding:60px 0}
+.section h2{font-size:clamp(1.9rem,4.8vw,2.9rem);color:var(--crust-dk)}
+
+.quote{display:grid;gap:26px}
+.quote blockquote{margin:0;font-family:"Young Serif",serif;font-size:clamp(1.5rem,3.6vw,2.1rem);line-height:1.3;color:var(--crust-dk)}
+.quote cite{display:block;font:500 .95rem/1.4 Karla,sans-serif;font-style:normal;color:var(--red);margin-top:14px}
+.quote p{color:var(--muted);max-width:50ch}
+
+.shelf{background:var(--flour-2)}
+.cols{display:grid;gap:8px 40px;margin-top:22px}
+.cols h3{font-size:1.25rem;margin:18px 0 4px;color:var(--crust-dk)}
+.cols p{margin:0;color:var(--muted)}
+.also{margin-top:28px;font-size:.98rem}
+.also span{display:inline-block;margin:4px 6px 0 0;padding:5px 11px;border:1px solid #c7b293;border-radius:3px;background:var(--flour)}
+
+.wide img{width:100%;aspect-ratio:3/2;object-fit:cover}
+
+.visit{display:grid;gap:30px}
+.visit address{font-style:normal;font-size:1.15rem;margin-bottom:10px}
+.hrs{font-family:"Young Serif",serif;font-size:2rem;color:var(--crust-dk);margin:0}
+.hrs small{display:block;font:500 1rem/1.4 Karla,sans-serif;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px}
+.links a{font-weight:700}
+
+footer{background:var(--crust-dk);color:#e6d6bd;padding:30px 0 24px;font-size:.9rem}
+footer a{color:var(--flour)}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 22px}
+footer nav{display:flex;gap:18px}
+#mentions{margin-top:18px;padding-top:12px;border-top:1px solid #6d4a2d;font-size:.84rem;color:#cdb898}
+.credit{font-size:.8rem;margin-top:12px;color:#bca584}
+
+@media (min-width:880px){
+  .hero .box{position:absolute;left:max(20px,calc((100vw - 1080px)/2 + 20px));bottom:-60px;margin:0;max-width:560px;padding:34px 36px}
+  .hero{margin-bottom:60px}
+  .quote{grid-template-columns:1.2fr .8fr;align-items:end}
+  .cols{grid-template-columns:repeat(2,1fr)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:0}
+  .split .wide img{height:100%;aspect-ratio:auto}
+  .split .visit{padding:60px 48px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="#"><small>Boulangerie pâtisserie</small>Le Fournil de Trégunc</a>
+  <span class="open" id="open">Lun - Sam, 7h - 19h</span>
+</header>
+
+<main>
+<section class="hero">
+  <img src="assets/hero.jpg" alt="Pains au levain sortis du four" width="1400" height="788" fetchpriority="high">
+  <div class="box">
+    <h1>Du pain chaud dès 7 heures, rue de Concarneau.</h1>
+    <p>Pains, viennoiseries, pâtisseries et sandwichs faits maison, du lundi au samedi. Un salon de thé pour prendre le temps.</p>
+    <div class="btns">
+      <a class="btn btn-r" href="#venir">Venir au fournil</a>
+      <a class="btn btn-o" href="https://www.facebook.com/profile.php?id=61594391332489" target="_blank" rel="noopener">Nos nouvelles sur Facebook</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap quote">
+    <div>
+      <blockquote>Deux amis réunis par une passion : le goût du fait maison.</blockquote>
+      <cite>Romain et Adrien, les nouveaux boulangers</cite>
+    </div>
+    <p>Romain et Adrien ont repris le Fournil de Trégunc en septembre. Même adresse, des fournées tout au long de la journée, et l'envie de faire découvrir leurs recettes.</p>
+  </div>
+</section>
+
+<section class="section shelf">
+  <div class="wrap">
+    <h2>Dans la boutique</h2>
+    <div class="cols">
+      <div><h3>Boulangerie</h3><p>Baguettes, pains de campagne et pains spéciaux, cuits sur place.</p></div>
+      <div><h3>Viennoiseries</h3><p>Croissants, pains au chocolat et brioches pour le petit-déjeuner.</p></div>
+      <div><h3>Pâtisserie et chocolaterie</h3><p>Gâteaux, entremets et chocolats, pour le goûter ou les fêtes.</p></div>
+      <div><h3>Sandwicherie et traiteur</h3><p>Sandwichs du midi et préparations traiteur à emporter.</p></div>
+    </div>
+    <div class="also">Et aussi <span>Salon de thé</span><span>Boissons à emporter</span><span>Confiserie</span><span>Épicerie</span></div>
+  </div>
+</section>
+
+<section class="split" id="venir">
+  <div class="wide"><img src="assets/vitrine.jpg" alt="Vitrine de viennoiseries" width="1000" height="668" loading="lazy"></div>
+  <div class="visit wrap">
+    <div>
+      <h2>Venir au fournil</h2>
+      <p class="hrs">7h - 19h<small>Du lundi au samedi. Fermé le dimanche.</small></p>
+    </div>
+    <div>
+      <address>71 b rue de Concarneau<br>29910 Trégunc</address>
+      <div class="links">
+        <a href="https://www.openstreetmap.org/search?query=71%20rue%20de%20Concarneau%2029910%20Tr%C3%A9gunc" target="_blank" rel="noopener">Voir sur la carte</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Le%20Fournil%20de%20Tr%C3%A9gunc%2071%20b%20rue%20de%20Concarneau%20Tr%C3%A9gunc" target="_blank" rel="noopener">Itinéraire Google Maps</a>
+        <a href="https://www.facebook.com/profile.php?id=61594391332489" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/fournildetregunc/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <span>Le Fournil de Trégunc, 71 b rue de Concarneau, Trégunc</span>
+      <nav><a href="#mentions">Mentions légales</a><a href="#mentions">Confidentialité</a></nav>
+    </div>
+    <div id="mentions">Mentions légales et confidentialité. Éditeur : SARL Boulangerie Trégunc, 71 b rue de Concarneau, 29910 Trégunc. SIREN, directeur de la publication et hébergeur : à compléter. Ce site ne dépose aucun cookie et ne collecte aucune donnée personnelle ; les polices sont chargées depuis Google Fonts.</div>
+    <p class="credit">Maquette non officielle. Démo réalisée par Avel, développeur web.</p>
+  </div>
+</footer>
+<script>
+(function(){var n=new Date(),d=n.getDay(),h=n.getHours(),e=document.getElementById('open');
+if(d>=1&&d<=6&&h>=7&&h<19){e.textContent='Ouvert, jusqu\'à 19h';e.className='open yes';}})();
+</script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Energie Coiffure, salon à Quimperlé</title>
+<meta name="description" content="Salon de coiffure rue de Pont-Aven à Quimperlé : coupes, colorations et balayages, chignons de mariée, lissages et extensions.">
+<!--
+  Photos : Unsplash (licence Unsplash, usage libre)
+  hero.jpg  https://unsplash.com/photos/wSpkThmoZQc
+  salon.jpg https://unsplash.com/photos/Xr12kfinkYA
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --stone:#ece6dd; --stone-2:#e0d7ca; --char:#2a2725; --muted:#625c56;
+  --copper:#a0522d; --copper-2:#c27a52;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--stone);color:var(--char);font:400 1.02rem/1.65 Jost,system-ui,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.02;margin:0 0 .4em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.cap{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--copper)}
+
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;max-width:1080px;margin:0 auto}
+.logo{text-decoration:none;font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:600;letter-spacing:.02em}
+.logo span{color:var(--copper);font-style:italic}
+header a.tel{text-decoration:none;font-weight:500}
+
+.hero{position:relative;max-width:1080px;margin:0 auto;padding:0 20px}
+.hero img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:2px}
+.hero .card{background:var(--stone);padding:26px 4px 0}
+.hero h1{font-size:clamp(2.7rem,8vw,5rem)}
+.hero h1 em{color:var(--copper)}
+.hero p{max-width:40ch;color:var(--muted);font-size:1.1rem}
+.btn{display:inline-block;padding:14px 26px;text-decoration:none;font-weight:500;letter-spacing:.04em}
+.btn-c{background:var(--char);color:var(--stone)}
+.btn-c:hover{background:var(--copper)}
+.btn-o{border:1px solid var(--char)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+
+.section{padding:64px 0}
+.section h2{font-size:clamp(2.1rem,5vw,3.2rem)}
+.list{margin:26px 0 0;border-top:1px solid #bfb4a5}
+.item{display:grid;gap:4px 28px;padding:22px 0;border-bottom:1px solid #bfb4a5}
+.item h3{font-size:1.7rem;margin:0}
+.item h3 em{font-weight:500;color:var(--copper)}
+.item p{margin:0;color:var(--muted);max-width:52ch}
+.price{font-size:.92rem;color:var(--muted);margin-top:18px}
+
+.team{background:var(--char);color:var(--stone)}
+.team .wrap{display:grid;gap:34px;padding-top:64px;padding-bottom:64px}
+.team h2{color:#f0e6da}
+.team p{color:#cfc5b8;max-width:46ch}
+.team img{width:100%;max-width:380px;aspect-ratio:2/3;object-fit:cover}
+.team blockquote{margin:22px 0 0;padding-left:18px;border-left:2px solid var(--copper-2);font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-style:italic;color:#f0e6da}
+
+.info{display:grid;gap:34px}
+.info address{font-style:normal;font-size:1.15rem;margin-bottom:10px}
+.days{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 8px;padding:0;list-style:none}
+.days li{padding:8px 12px;border:1px solid #bfb4a5;font-size:.9rem}
+.days li.on{background:var(--char);color:var(--stone);border-color:var(--char)}
+.days li.off{color:#9b9187;text-decoration:line-through}
+.links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px}
+.links a{font-weight:500}
+
+footer{border-top:1px solid #bfb4a5;padding:30px 0 26px;font-size:.9rem;color:var(--muted)}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 22px}
+footer nav{display:flex;gap:18px}
+footer nav a{color:var(--char)}
+#mentions{margin-top:18px;padding-top:12px;border-top:1px solid #d3c9bb;font-size:.84rem}
+.credit{font-size:.8rem;margin-top:12px}
+
+@media (min-width:880px){
+  .hero{display:grid;grid-template-columns:1fr 1fr;align-items:end}
+  .hero img{grid-column:2;grid-row:1;aspect-ratio:4/5}
+  .hero .card{grid-column:1;grid-row:1;padding:0 48px 48px 0}
+  .item{grid-template-columns:1fr 1.2fr;align-items:baseline}
+  .team .wrap{grid-template-columns:1.2fr .8fr;align-items:center}
+  .info{grid-template-columns:1fr 1fr;gap:60px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#">Energie <span>Coiffure</span></a>
+  <a class="tel" href="tel:+33298090736">02 98 09 07 36</a>
+</header>
+
+<main>
+<section class="hero">
+  <img src="assets/hero.jpg" alt="Coiffeuse réalisant des boucles au fer" width="1400" height="933" fetchpriority="high">
+  <div class="card">
+    <div class="cap">Salon de coiffure, Quimperlé</div>
+    <h1>Couleur, coupe, <em>et le jour J.</em></h1>
+    <p>Rue de Pont-Aven, une équipe qui coiffe Quimperlé depuis des années : coupes, balayages, coiffures de mariée.</p>
+    <div class="btns">
+      <a class="btn btn-c" href="tel:+33298090736">Prendre rendez-vous</a>
+      <a class="btn btn-o" href="#prestations">Les prestations</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="prestations">
+  <div class="wrap">
+    <div class="cap">Prestations</div>
+    <h2>Ce que l'on fait au salon</h2>
+    <div class="list">
+      <div class="item"><h3>Shampooing, coupe, <em>brushing</em></h3><p>La coupe adaptée à vos cheveux, et un brushing pour repartir coiffé.</p></div>
+      <div class="item"><h3>Colorations <em>et balayages</em></h3><p>Couleur, reflets cuivrés, balayages lumineux sur carré ou cheveux longs.</p></div>
+      <div class="item"><h3>Chignons <em>et mariées</em></h3><p>Coiffures de mariée et de cérémonie, chignons, essai sur rendez-vous.</p></div>
+      <div class="item"><h3>Lissages <em>et extensions</em></h3><p>Pour discipliner les cheveux ou gagner en longueur et en volume.</p></div>
+    </div>
+    <p class="price">Tarifs communiqués au salon et par téléphone.</p>
+  </div>
+</section>
+
+<section class="team">
+  <div class="wrap">
+    <div>
+      <div class="cap" style="color:var(--copper-2)">L'équipe</div>
+      <h2>Une équipe de cinq, un même salon</h2>
+      <p>L'équipe continue rue de Pont-Aven avec la même énergie, et souhaite une belle retraite à Nadine après toutes ces années au salon.</p>
+      <blockquote>Bonne retraite Nadine.</blockquote>
+    </div>
+    <img src="assets/salon.jpg" alt="Intérieur d'un salon de coiffure" width="900" height="1350" loading="lazy">
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap info">
+    <div>
+      <div class="cap">Rendez-vous</div>
+      <h2>Horaires</h2>
+      <ul class="days" id="days">
+        <li data-d="1" class="off">Lun</li><li data-d="2">Mar</li><li data-d="3">Mer</li><li data-d="4">Jeu</li><li data-d="5">Ven</li><li data-d="6">Sam</li><li data-d="0" class="off">Dim</li>
+      </ul>
+      <p>Du mardi au samedi, sur rendez-vous. Appelez le salon pour connaître les créneaux disponibles.</p>
+      <a class="btn btn-c" href="tel:+33298090736">02 98 09 07 36</a>
+    </div>
+    <div>
+      <div class="cap">Adresse</div>
+      <h2>Le salon</h2>
+      <address>87 rue de Pont-Aven<br>29300 Quimperlé</address>
+      <div class="links">
+        <a href="https://www.openstreetmap.org/search?query=87%20rue%20de%20Pont-Aven%2029300%20Quimperl%C3%A9" target="_blank" rel="noopener">Voir sur la carte</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Energie%20Coiffure%2087%20rue%20de%20Pont-Aven%20Quimperl%C3%A9" target="_blank" rel="noopener">Itinéraire Google Maps</a>
+        <a href="https://www.facebook.com/profile.php?id=100054380896275" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <span>Energie Coiffure, 87 rue de Pont-Aven, Quimperlé</span>
+      <nav><a href="#mentions">Mentions légales</a><a href="#mentions">Confidentialité</a></nav>
+    </div>
+    <div id="mentions">Mentions légales et confidentialité. Éditeur : Herpe (Energie Coiffure), 87 rue de Pont-Aven, 29300 Quimperlé. SIREN, directeur de la publication et hébergeur : à compléter. Ce site ne dépose aucun cookie et ne collecte aucune donnée personnelle ; les polices sont chargées depuis Google Fonts.</div>
+    <p class="credit">Maquette non officielle. Démo réalisée par Avel, développeur web.</p>
+  </div>
+</footer>
+<script>
+(function(){var d=new Date().getDay(),l=document.querySelector('#days li[data-d="'+d+'"]');if(l&&!l.classList.contains('off'))l.classList.add('on');})();
+</script>
+</body>
+</html>
