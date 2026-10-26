@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Bigouden Cuirs, maroquinerie au Guilvinec</title>
+<meta name="description" content="Bigouden Cuirs et les Arts secrets, atelier-boutique de maroquinerie et d'articles en cuir au 45 rue de la Marine, au Guilvinec.">
+<!--
+  Photos d'illustration (aucune n'est une création de l'atelier) :
+  outils-cuir.jpg    https://unsplash.com/photos/I7iJOE4fsYo (Haupes, licence Unsplash)
+  porte-cartes.jpg   https://unsplash.com/photos/chB-ff0cgCU (charlesdeluvio, licence Unsplash)
+  portefeuille.jpg   https://unsplash.com/photos/xaNJzO77Bes (Aleksandrs Karevs, licence Unsplash)
+  port-guilvinec.jpg https://commons.wikimedia.org/wiki/File:Le_Guilvinec_-_port_03.jpg (Fab5669, CC BY-SA 4.0, redimensionnée)
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+img{max-height:90svh;object-fit:cover}
+:root{
+  --lie:#5a1d26; --lie-d:#3f141b; --or:#d9a12b; --or-pale:#f0d58f;
+  --papier:#f5f2ec; --encre:#241c1a; --gris:#6a6360; --filet:#e2dbd0;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--papier);color:var(--encre);font:400 1.05rem/1.62 Figtree,system-ui,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--or);outline-offset:3px}
+h1,h2,h3{font-family:Gloock,Georgia,serif;font-weight:400;line-height:1.05;margin:0 0 .4em}
+h2{font-size:clamp(2.2rem,8vw,3.4rem);color:var(--lie)}
+h3{font-size:1.45rem}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+section{padding:64px 0}
+
+/* broderie: a band of gold motifs inspired by Bigouden embroidery, the page's one ornament */
+.broderie{height:46px;background-color:var(--lie-d);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='46' viewBox='0 0 56 46'%3E%3Cg fill='none' stroke='%23d9a12b' stroke-width='2'%3E%3Ccircle cx='28' cy='23' r='7'/%3E%3Cpath d='M28 4c5 6 5 10 0 12c-5-2-5-6 0-12zM28 42c5-6 5-10 0-12c-5 2-5 6 0 12z'/%3E%3Cpath d='M0 23h14M42 23h14'/%3E%3C/g%3E%3Ccircle cx='28' cy='23' r='2.5' fill='%23f0d58f'/%3E%3C/svg%3E");
+  background-repeat:repeat-x;background-position:center}
+
+.hero{background:var(--lie);color:var(--papier)}
+.hero .grid{display:grid}
+.hero .text{padding:28px 16px 48px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:56px}
+.top .mark{font-family:Gloock,serif;font-size:1.25rem;text-decoration:none}
+.top nav{display:none;gap:20px;font-weight:600}
+.top nav a{text-decoration:none}
+.top nav a:hover{color:var(--or-pale)}
+.hero h1{font-size:clamp(3rem,13vw,5.4rem);color:#fff;margin-bottom:.15em}
+.hero h1 .sub{display:block;font-size:.5em;color:var(--or-pale);margin-top:.25em}
+.hero p{font-size:1.15rem;max-width:36ch;margin:22px 0 28px;color:#efe4dc}
+.hero figure{margin:0;position:relative}
+.hero figure img{width:100%;height:100%;aspect-ratio:4/5}
+.hero figcaption{position:absolute;right:10px;bottom:10px;background:rgba(36,28,26,.75);color:#efe4dc;font-size:.78rem;padding:4px 8px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent}
+.btn.or{background:var(--or);color:var(--lie-d)}
+.btn.or:hover{background:var(--or-pale)}
+.btn.contour{border-color:currentColor}
+.btn.contour:hover{background:rgba(255,255,255,.1)}
+.btn.lie{background:var(--lie);color:#fff}
+.btn.lie:hover{background:var(--lie-d)}
+
+.boutique .grid{display:grid;gap:34px}
+.boutique p{max-width:58ch}
+.boutique .pics{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.boutique figure{margin:0}
+.boutique .pics img{width:100%;aspect-ratio:1/1;border-radius:4px}
+figcaption{font-size:.82rem;color:var(--gris);margin-top:6px}
+.todo{border-left:4px solid var(--or);background:#fff;padding:16px 18px;margin-top:24px;max-width:58ch}
+.todo p{margin:0}
+
+.secrets{background:var(--lie-d);color:var(--papier);text-align:center}
+.secrets h2{color:var(--or-pale)}
+.secrets p{max-width:52ch;margin:0 auto;font-size:1.12rem;color:#e8dcd4}
+
+.port{padding:0}
+.port figure{margin:0;position:relative}
+.port img{width:100%;aspect-ratio:3/2;max-height:70svh}
+.port figcaption{padding:8px 16px 0;max-width:1100px;margin:0 auto}
+.port .wrap{padding-top:40px;padding-bottom:64px}
+.port p{max-width:58ch;font-size:1.12rem;margin:0}
+
+.infos .grid{display:grid;gap:34px}
+.infos address{font-style:normal;font-size:1.3rem;line-height:1.45;margin-bottom:18px}
+.infos dl{margin:0}
+.infos dt{font-family:Gloock,serif;font-size:1.2rem;color:var(--lie)}
+.infos dd{margin:2px 0 18px;max-width:46ch}
+.links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-weight:600}
+
+.contact{background:#fff;border-top:1px solid var(--filet)}
+.contact .box{max-width:640px}
+.contact p{margin:0 0 18px}
+
+footer{background:var(--lie-d);color:#d9cbc3;padding:34px 0 42px;font-size:.92rem}
+footer .mark{font-family:Gloock,serif;font-size:1.35rem;color:#fff;text-decoration:none}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 18px;margin:14px 0}
+footer nav a{text-decoration:none}
+footer nav a:hover{text-decoration:underline}
+#mentions{margin-top:12px;font-size:.82rem;max-width:80ch}
+.credit{margin-top:10px;font-size:.78rem}
+
+@media (min-width:860px){
+  section{padding:96px 0}
+  .top nav{display:flex}
+  .hero .grid{grid-template-columns:1.15fr 1fr;max-width:1280px;margin:0 auto}
+  .hero .text{padding:32px 48px 72px}
+  .hero figure img{aspect-ratio:auto;min-height:620px}
+  .boutique .grid{grid-template-columns:1fr 1.1fr;align-items:start;gap:56px}
+  .infos .grid{grid-template-columns:1fr 1fr;gap:56px}
+  .port figcaption{padding:8px 16px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="grid">
+    <div class="text">
+      <div class="top">
+        <a class="mark" href="#top">Bigouden Cuirs</a>
+        <nav aria-label="Navigation principale">
+          <a href="#boutique">La boutique</a>
+          <a href="#infos">Infos pratiques</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <h1>Bigouden Cuirs <span class="sub">et les Arts secrets</span></h1>
+      <p>Atelier-boutique de maroquinerie et d'articles en cuir, au 45 rue de la Marine, au Guilvinec.</p>
+      <div class="btns">
+        <a class="btn or" href="#infos">Venir à la boutique</a>
+        <a class="btn contour" href="#contact">Nous contacter</a>
+      </div>
+    </div>
+    <figure>
+      <img src="assets/outils-cuir.jpg" width="1280" height="1600" alt="Outils de travail du cuir posés sur un fond sombre : marteau, pinces, ciseaux, fil et boucles">
+      <figcaption>Photo d'illustration</figcaption>
+    </figure>
+  </div>
+</header>
+
+<div class="broderie" role="presentation"></div>
+
+<main>
+  <section id="boutique" class="boutique">
+    <div class="wrap grid">
+      <div>
+        <h2>Le cuir, au cœur du pays bigouden</h2>
+        <p>Bigouden Cuirs fabrique et vend des articles en cuir dans son atelier-boutique du Guilvinec. Entrez voir les pièces, parler matière et finitions, et trouver l'objet qui vous accompagnera longtemps.</p>
+        <div class="todo">
+          <p>Les créations, les cuirs travaillés et les services proposés seront présentés ici avec l'atelier.</p>
+        </div>
+      </div>
+      <div class="pics">
+        <figure>
+          <img src="assets/porte-cartes.jpg" width="1600" height="1200" loading="lazy" alt="Porte-cartes en cuir bordeaux cousu main posé sur une surface en béton">
+          <figcaption>Photo d'illustration</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/portefeuille.jpg" width="1600" height="1067" loading="lazy" alt="Portefeuille zippé en cuir naturel et porte-clés posés sur un livre et une table en noyer">
+          <figcaption>Photo d'illustration</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="secrets">
+    <div class="wrap">
+      <h2>Les Arts secrets</h2>
+      <p>La deuxième moitié du nom de la boutique. L'atelier racontera ici ce qu'elle recouvre.</p>
+    </div>
+  </section>
+
+  <section class="port">
+    <figure>
+      <img src="assets/port-guilvinec.jpg" width="1600" height="1067" loading="lazy" alt="Chalutiers rentrant au port du Guilvinec, phare rouge et digue en arrière-plan">
+      <figcaption>Le port du Guilvinec. Photo Fab5669, CC BY-SA 4.0, via Wikimedia Commons.</figcaption>
+    </figure>
+    <div class="wrap">
+      <h2>Rue de la Marine, au Guilvinec</h2>
+      <p>La boutique vous attend au 45 rue de la Marine, dans le port de pêche du pays bigouden. Une halte à faire en ville, entre deux retours de bateaux.</p>
+    </div>
+  </section>
+
+  <section id="infos" class="infos">
+    <div class="wrap grid">
+      <div>
+        <h2>Infos pratiques</h2>
+        <address>Bigouden Cuirs et les Arts secrets<br>45 rue de la Marine<br>29730 Le Guilvinec</address>
+        <div class="btns">
+          <a class="btn lie" href="https://www.google.com/maps/search/?api=1&amp;query=Bigouden+Cuirs+45+Rue+de+la+Marine+29730+Le+Guilvinec">Itinéraire</a>
+        </div>
+        <div class="links">
+          <a href="https://www.openstreetmap.org/node/5689189574">Plan OpenStreetMap</a>
+        </div>
+      </div>
+      <dl>
+        <dt>Horaires</dt>
+        <dd>À confirmer avec la boutique.</dd>
+        <dt>Accessibilité</dt>
+        <dd>Accès pour les personnes à mobilité réduite, avec un bouton d'appel vers l'atelier à droite de l'entrée.</dd>
+        <dt>Paiement</dt>
+        <dd>Espèces et cartes bancaires.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap box">
+      <h2>Nous contacter</h2>
+      <p>Une question sur une pièce, une commande ou une réparation ? Le formulaire de contact sera branché sur le site final.</p>
+      <p>En attendant, la boutique vous accueille au 45 rue de la Marine.</p>
+    </div>
+  </section>
+</main>
+
+<div class="broderie" role="presentation"></div>
+
+<footer>
+  <div class="wrap">
+    <a class="mark" href="#top">Bigouden Cuirs et les Arts secrets</a>
+    <nav aria-label="Pied de page">
+      <a href="#boutique">La boutique</a>
+      <a href="#infos">Infos pratiques</a>
+      <a href="#contact">Contact</a>
+      <a href="#mentions">Mentions légales</a>
+      <a href="#mentions">Confidentialité</a>
+    </nav>
+    <div id="mentions">Mentions légales et confidentialité. Éditeur : Bigouden Cuirs et les Arts secrets, 45 rue de la Marine, 29730 Le Guilvinec. SIRET, directeur de la publication et hébergeur : à compléter. Ce site ne dépose aucun cookie et ne collecte aucune donnée personnelle ; les polices sont chargées depuis Google Fonts.</div>
+    <div class="credit">Photos d'illustration : Unsplash (Haupes, charlesdeluvio, Aleksandrs Karevs) et Wikimedia Commons (Fab5669, CC BY-SA 4.0).</div>
+    <div class="credit">Site de démonstration, maquette non officielle. Démo réalisée par Avel, développeur web.</div>
+  </div>
+</footer>
+
+</body>
+</html>
