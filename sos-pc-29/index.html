@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<!--
+  Site de démonstration, maquette non officielle.
+  Photos (téléchargées et redimensionnées, servies en local, licence Unsplash) :
+  - assets/portable-ouvert.jpg : "The motherboard of a laptop with a screw in it", Samsung Memory, Unsplash,
+    https://unsplash.com/photos/the-motherboard-of-a-laptop-with-a-screw-in-it-QTW80j6ZK4c
+  - assets/ordinateur-a-la-maison.jpg : "Elderly couple using a laptop together at home", Vitaly Gariev, Unsplash,
+    https://unsplash.com/photos/elderly-couple-using-a-laptop-together-at-home-Gi8-DM56n6Y
+  Informations : fiche OpenStreetMap node 6005258199, registre des entreprises (SOS PC 29).
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>SOS PC 29, dépannage informatique au Guilvinec</title>
+<meta name="description" content="SOS PC 29 au Guilvinec : dépannage et réparation d'ordinateurs toutes marques, installation, vente de matériel neuf ou reconditionné, intervention à domicile en Pays Bigouden.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+img{max-height:90svh;object-fit:cover}
+:root{
+  --marine:#1d2a44;
+  --marine-2:#2b3c5e;
+  --jaune:#ffd23f;
+  --jaune-pale:#fff4c7;
+  --ciel:#eef2f7;
+  --blanc:#ffffff;
+  --gris:#4a5568;
+  --head:"Lexend",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--blanc);color:var(--marine);font:400 1.15rem/1.6 var(--body)}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--marine);text-underline-offset:.18em;text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--jaune);outline-offset:3px}
+h1,h2,h3{font-family:var(--head);line-height:1.15;margin:0}
+h2{font-size:clamp(1.8rem,1.3rem + 2vw,2.6rem);font-weight:700;letter-spacing:-.015em}
+h3{font-size:1.25rem;font-weight:600}
+p{margin:0 0 1em}
+.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+
+/* header */
+.top{background:var(--marine);color:var(--blanc)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.9rem 0}
+.logo{display:flex;align-items:center;gap:.6rem;color:var(--blanc);text-decoration:none;font-family:var(--head);font-weight:700;font-size:1.25rem}
+.logo span.badge{background:var(--jaune);color:var(--marine);border-radius:8px;padding:.1rem .45rem;font-size:1rem}
+.top nav{display:none;gap:1.6rem;font-size:1rem}
+.top nav a{color:var(--blanc);text-decoration:none}
+.top nav a:hover{text-decoration:underline}
+.top .open{font-size:.95rem;color:#d6deeb;text-align:right;line-height:1.3}
+
+/* hero */
+.hero{background:var(--marine);color:var(--blanc);padding:2rem 0 3.2rem}
+.hero .wrap{display:grid;gap:2rem}
+.hero h1{font-size:clamp(2.2rem,1.5rem + 3.4vw,3.8rem);font-weight:700;letter-spacing:-.02em}
+.hero .lead{font-size:1.25rem;color:#e3e9f3;margin-top:1.2rem;max-width:34rem}
+.hero .where{display:inline-block;margin-top:.4rem;background:var(--marine-2);border-radius:999px;padding:.35rem .9rem;font-size:1rem;color:#e3e9f3}
+.actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.8rem}
+.btn{display:inline-block;font-family:var(--head);font-weight:600;font-size:1.1rem;text-decoration:none;border-radius:12px;padding:.9rem 1.4rem}
+.btn-main{background:var(--jaune);color:var(--marine)}
+.btn-main:hover{background:#ffe27a}
+.btn-ghost{color:var(--blanc);border:2px solid #5c6f94}
+.btn-ghost:hover{border-color:var(--blanc)}
+.hero figure{margin:0}
+.hero img{width:100%;aspect-ratio:4/3;border-radius:18px}
+.hero figcaption{font-size:.8rem;color:#b8c3d6;margin-top:.4rem}
+
+section{padding:4rem 0}
+
+/* problems: the memorable element */
+.souci{background:var(--ciel)}
+.souci-head{max-width:40rem;margin-bottom:2rem}
+.souci-head p{margin-top:.8rem;color:var(--gris)}
+.problems{display:grid;gap:.9rem}
+.problems details{background:var(--blanc);border-radius:14px;border:2px solid transparent;box-shadow:0 2px 0 #d5dde9}
+.problems details[open]{border-color:var(--marine)}
+.problems summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:1rem;padding:1.1rem 1.2rem;font-family:var(--head);font-weight:600;font-size:1.2rem;line-height:1.3}
+.problems summary::-webkit-details-marker{display:none}
+.problems summary::after{content:"";flex:none;margin-left:auto;width:2.1rem;height:2.1rem;border-radius:50%;background:var(--jaune) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 5v14M5 12h14' stroke='%231d2a44' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E") center/1.1rem no-repeat}
+.problems details[open] summary::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12h14' stroke='%231d2a44' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E")}
+.problems .ans{padding:0 1.2rem 1.2rem}
+.problems .ans p{margin:0 0 .6rem;max-width:40rem}
+.problems .ans p:last-child{margin:0}
+.problems .ans strong{background:var(--jaune-pale);padding:0 .2rem}
+.other{margin-top:1.6rem;font-size:1.1rem}
+
+/* services */
+.svc{display:grid;gap:2rem;margin-top:2rem}
+.svc div{border-top:4px solid var(--jaune);padding-top:1rem}
+.svc h3{margin-bottom:.4rem}
+.svc p{margin:0;color:var(--gris)}
+
+/* home */
+.home{background:var(--jaune-pale)}
+.home .wrap{display:grid;gap:2rem;align-items:center}
+.home img{width:100%;aspect-ratio:16/10;border-radius:18px}
+.home .credit{font-size:.8rem;color:var(--gris);margin-top:.4rem}
+.home ul{padding-left:1.2rem;margin:1rem 0 0}
+.home li{margin-bottom:.4rem}
+
+/* infos */
+.infos .wrap{display:grid;gap:2.4rem}
+.panel{background:var(--ciel);border-radius:18px;padding:1.6rem}
+.panel h3{margin-bottom:.8rem}
+.panel address{font-style:normal;font-size:1.25rem;margin-bottom:1rem}
+.hours{font-size:1.25rem}
+.hours strong{font-family:var(--head)}
+.small{font-size:.95rem;color:var(--gris)}
+.links{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem}
+
+/* contact */
+.contact{background:var(--marine);color:var(--blanc)}
+.contact p{color:#e3e9f3;max-width:38rem}
+.contact .btn{margin-top:.4rem}
+.contact .small{color:#b8c3d6;margin-top:1rem}
+
+footer{background:#141d30;color:#c5cede;padding:2.4rem 0;font-size:.95rem}
+footer p{margin:0 0 .8rem}
+#mentions{color:#9aa6bb;max-width:60rem;margin-bottom:.8rem}
+
+@media (min-width:860px){
+  .top nav{display:flex}
+  .hero{padding:3.5rem 0 4.5rem}
+  .hero .wrap{grid-template-columns:1.2fr 1fr;gap:3.5rem;align-items:center}
+  .hero img{aspect-ratio:4/5;max-height:560px}
+  .problems{grid-template-columns:1fr 1fr;align-items:start}
+  .svc{grid-template-columns:repeat(4,1fr);gap:2rem}
+  .home .wrap{grid-template-columns:1fr 1fr;gap:4rem}
+  .infos .wrap{grid-template-columns:1fr 1fr;align-items:start}
+  section{padding:5rem 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#"><span class="badge">SOS</span> PC 29</a>
+    <nav aria-label="Navigation principale">
+      <a href="#souci">Votre souci</a>
+      <a href="#services">Services</a>
+      <a href="#domicile">À domicile</a>
+      <a href="#infos">Horaires et adresse</a>
+    </nav>
+    <p class="open">Du lundi au samedi<br>8 h à 20 h</p>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Un souci avec votre ordinateur ? On s'en occupe.</h1>
+        <p class="lead">Dépannage, réparation et installation, toutes marques. On répare, on explique simplement, et on peut venir chez vous.</p>
+        <p class="where">Au Guilvinec, pour tout le Pays Bigouden</p>
+        <div class="actions">
+          <a class="btn btn-main" href="#contact">Nous contacter</a>
+          <a class="btn btn-ghost" href="#souci">Trouver mon problème</a>
+        </div>
+      </div>
+      <figure>
+        <img src="assets/portable-ouvert.jpg" width="960" height="1200" alt="Ordinateur portable ouvert sur l'établi, avec un tournevis et une barrette de stockage">
+        <figcaption>Photo Samsung Memory, Unsplash.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section class="souci" id="souci" aria-labelledby="souci-titre">
+    <div class="wrap">
+      <div class="souci-head">
+        <h2 id="souci-titre">Quel est votre souci ?</h2>
+        <p>Pas besoin de connaître les termes techniques. Choisissez ce qui ressemble à votre situation pour voir ce que nous pouvons faire.</p>
+      </div>
+      <div class="problems">
+        <details>
+          <summary>Mon ordinateur est devenu très lent</summary>
+          <div class="ans">
+            <p>Nous cherchons ce qui le ralentit : programmes inutiles, mises à jour en retard, disque fatigué.</p>
+            <p>Souvent, un nettoyage suffit. Sinon, nous vous proposons de <strong>changer une pièce</strong> plutôt que tout l'ordinateur, quand cela vaut le coup.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Il ne s'allume plus ou ne démarre plus</summary>
+          <div class="ans">
+            <p>Nous faisons un diagnostic pour savoir si la panne vient du matériel ou du système.</p>
+            <p>Nous réparons toutes les marques et, quand c'est possible, nous <strong>récupérons vos fichiers</strong>.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Des publicités ou des fenêtres bizarres s'affichent</summary>
+          <div class="ans">
+            <p>Nous recherchons et supprimons les virus et les logiciels indésirables.</p>
+            <p>Nous vous donnons aussi quelques réflexes simples pour <strong>repérer les arnaques</strong> par courriel ou sur internet.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Mon imprimante ou le wifi ne fonctionne pas</summary>
+          <div class="ans">
+            <p>Installation et réglage de l'imprimante, connexion au wifi, branchement des appareils.</p>
+            <p>Nous pouvons <strong>venir chez vous</strong> pour régler le problème sur place.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Je veux garder mes photos et mes documents</summary>
+          <div class="ans">
+            <p>Nous transférons vos fichiers vers un nouvel ordinateur, une clé USB ou un disque externe.</p>
+            <p>C'est aussi l'occasion de mettre en place une <strong>sauvegarde</strong> pour ne rien perdre.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Je dois changer d'ordinateur</summary>
+          <div class="ans">
+            <p>Nous vous conseillons selon votre usage et vendons du matériel <strong>neuf ou reconditionné</strong>.</p>
+            <p>Nous l'installons, transférons vos données et vous montrons comment vous en servir.</p>
+          </div>
+        </details>
+      </div>
+      <p class="other">Votre problème n'est pas dans la liste ? Passez nous voir au Guilvinec, nous regarderons ensemble.</p>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="services-titre">
+    <div class="wrap">
+      <h2 id="services-titre">Ce que nous faisons</h2>
+      <div class="svc">
+        <div>
+          <h3>Dépannage et réparation</h3>
+          <p>Ordinateurs fixes et portables, toutes marques.</p>
+        </div>
+        <div>
+          <h3>Installation</h3>
+          <p>Mise en service d'un ordinateur, d'une imprimante ou d'un appareil multimédia.</p>
+        </div>
+        <div>
+          <h3>Vente de matériel</h3>
+          <p>Ordinateurs et matériel multimédia, neufs ou reconditionnés.</p>
+        </div>
+        <div>
+          <h3>Intervention à domicile</h3>
+          <p>Quand il est plus simple de régler le problème chez vous.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home" id="domicile" aria-labelledby="domicile-titre">
+    <div class="wrap">
+      <div>
+        <img src="assets/ordinateur-a-la-maison.jpg" width="1400" height="788" alt="Un couple de retraités utilise un ordinateur portable dans leur salon" loading="lazy">
+        <p class="credit">Photo Vitaly Gariev, Unsplash.</p>
+      </div>
+      <div>
+        <h2 id="domicile-titre">Chez vous, à votre rythme</h2>
+        <p style="margin-top:1rem">Vous ne pouvez pas vous déplacer, ou le problème concerne votre box, votre imprimante ou votre installation ? Nous intervenons à domicile dans le Pays Bigouden.</p>
+        <ul>
+          <li>Réglages sur votre propre matériel</li>
+          <li>Explications simples, sans jargon</li>
+          <li>Le temps de vous montrer comment faire</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="infos" id="infos" aria-labelledby="infos-titre">
+    <div class="wrap">
+      <div>
+        <h2 id="infos-titre">Horaires et adresse</h2>
+        <p style="margin-top:1rem">L'atelier se trouve au Guilvinec et intervient dans tout le Pays Bigouden.</p>
+      </div>
+      <div class="panel">
+        <h3>SOS PC 29</h3>
+        <address>13 rue de Lagad Yar<br>29730 Guilvinec</address>
+        <p class="hours"><strong>Lundi au samedi</strong><br>8 h à 20 h</p>
+        <p class="small">Horaires indicatifs, à confirmer.</p>
+        <p class="links">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=SOS%20PC%2029%2C%2013%20rue%20de%20Lagad%20Yar%2C%2029730%20Guilvinec">Itinéraire</a>
+          <a href="https://www.openstreetmap.org/node/6005258199">Voir sur OpenStreetMap</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-titre">
+    <div class="wrap">
+      <h2 id="contact-titre">Nous contacter</h2>
+      <p style="margin-top:1rem">Décrivez votre problème avec vos mots : nous vous dirons ce que nous pouvons faire, en atelier ou chez vous.</p>
+      <p class="small">Le formulaire de contact et les coordonnées seront ajoutés sur le site définitif. En attendant, l'atelier vous accueille au 13 rue de Lagad Yar, au Guilvinec.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>SOS PC 29, 13 rue de Lagad Yar, 29730 Guilvinec. Dépannage et réparation informatique en Pays Bigouden.</p>
+    <p>Photos : Samsung Memory et Vitaly Gariev, licence Unsplash.</p>
+    <div id="mentions">Mentions légales et confidentialité. Éditeur : SOS PC 29, 13 rue de Lagad Yar, 29730 Guilvinec. SIRET, directeur de la publication et hébergeur : à compléter. Ce site ne dépose aucun cookie et ne collecte aucune donnée personnelle ; les polices sont chargées depuis Google Fonts.</div>
+    <p>Site de démonstration, maquette non officielle. Démo réalisée par Avel, développeur web.</p>
+  </div>
+</footer>
+
+</body>
+</html>
