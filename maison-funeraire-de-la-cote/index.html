@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<!--
+  Site de démonstration, maquette non officielle.
+  Photos (téléchargées et redimensionnées, servies en local) :
+  - assets/kerity-penmarch.jpg : "Bord de mer Kérity (Penmarc'h), Finistère (9601917562).jpg", Jeanne Menjoulet, CC BY 2.0,
+    https://commons.wikimedia.org/wiki/File:Bord_de_mer_K%C3%A9rity_(Penmarc%27h),_Finist%C3%A8re_(9601917562).jpg
+  - assets/iris-plomeur.jpg : "Champ d'iris à Plomeur 01.jpg", El Funcionario, CC BY-SA 4.0,
+    https://commons.wikimedia.org/wiki/File:Champ_d%27iris_%C3%A0_Plomeur_01.jpg
+  - assets/rochers-saint-guenole.jpg : "Rochers à St Guénolé (9597260101).jpg", Jeanne Menjoulet, CC BY 2.0,
+    https://commons.wikimedia.org/wiki/File:Rochers_%C3%A0_St_Gu%C3%A9nol%C3%A9_(9597260101).jpg
+  Informations : fiche OpenStreetMap node 9685829085, registre des entreprises (SARL Daniel Y),
+  ancien site de l'entreprise consulté via archive.org.
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Maison funéraire de la Côte, pompes funèbres à Plomeur</title>
+<meta name="description" content="Maison funéraire de la Côte à Plomeur et agence à Penmarch : organisation des obsèques, salons funéraires, démarches, prévoyance, marbrerie et entretien des tombes en Pays Bigouden.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Spectral:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+img{max-height:90svh;object-fit:cover}
+:root{
+  --brume:#e9ecea;
+  --blanc:#f7f8f7;
+  --sable:#d9d2c3;
+  --lichen:#8a9a86;
+  --ardoise:#52606a;
+  --granite:#3d4448;
+  --encre:#23292c;
+  --serif:"Spectral",Georgia,serif;
+  --sans:"Hanken Grotesk",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--blanc);color:var(--encre);font:400 1.0625rem/1.65 var(--sans)}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--granite);text-underline-offset:.2em}
+a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:2px solid var(--ardoise);outline-offset:3px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.2;margin:0;color:var(--granite)}
+h2{font-size:clamp(1.65rem,1.2rem + 1.6vw,2.3rem);font-weight:300;letter-spacing:-.005em}
+h3{font-size:1.25rem;font-weight:500}
+p{margin:0 0 1em}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+.measure{max-width:38rem}
+
+/* header */
+.top{border-bottom:1px solid var(--sable);background:var(--blanc)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.9rem 0}
+.mark{font-family:var(--serif);font-size:1.15rem;color:var(--granite);text-decoration:none;line-height:1.2}
+.mark small{display:block;font-family:var(--sans);font-size:.78rem;color:var(--ardoise)}
+.top nav{display:none;gap:1.6rem;font-size:.95rem}
+.top nav a{text-decoration:none;color:var(--ardoise)}
+.top nav a:hover{color:var(--encre);text-decoration:underline}
+.permanence{font-size:.85rem;color:var(--ardoise);text-align:right;line-height:1.3}
+.permanence strong{display:block;color:var(--granite);font-weight:600}
+
+/* hero */
+.hero{background:var(--brume)}
+.hero figure{margin:0}
+.hero img{width:100%;aspect-ratio:16/10;filter:saturate(.72) contrast(.96)}
+.hero figcaption{font-size:.78rem;color:var(--ardoise);padding:.4rem 16px 0}
+.hero-text{padding:2.2rem 0 3rem}
+.hero h1{font-size:clamp(2.1rem,1.4rem + 3vw,3.6rem);font-weight:300;letter-spacing:-.01em;max-width:15ch}
+.hero .lead{font-family:var(--serif);font-size:1.2rem;line-height:1.55;color:var(--granite);margin-top:1.2rem;max-width:32rem}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;align-items:center;margin-top:1.8rem}
+.btn{display:inline-block;background:var(--granite);color:var(--blanc);text-decoration:none;padding:.8rem 1.4rem;border-radius:2px;font-weight:500}
+.btn:hover{background:var(--encre)}
+.link-quiet{color:var(--granite);font-weight:500}
+
+/* sections */
+section{padding:4rem 0}
+.intro{font-family:var(--serif);font-size:1.15rem;line-height:1.7;color:var(--granite)}
+
+/* steps: the one memorable element */
+.steps-sec{background:var(--blanc)}
+.steps-head{display:grid;gap:1rem;margin-bottom:2.4rem}
+.steps-head p{color:var(--ardoise);max-width:36rem;margin:0}
+.steps{list-style:none;margin:0;padding:0;counter-reset:etape;position:relative}
+.steps li{counter-increment:etape;position:relative;padding:0 0 2.2rem 3.6rem}
+.steps li::before{content:counter(etape);position:absolute;left:0;top:-.1rem;width:2.4rem;height:2.4rem;border-radius:50%;border:1px solid var(--lichen);background:var(--blanc);display:grid;place-items:center;font-family:var(--serif);font-size:1.15rem;color:var(--granite);z-index:1}
+.steps li::after{content:"";position:absolute;left:1.2rem;top:2.3rem;bottom:0;width:1px;background:var(--sable)}
+.steps li:last-child{padding-bottom:0}
+.steps li:last-child::after{display:none}
+.steps h3{margin-bottom:.35rem}
+.steps p{color:var(--encre);margin:0;max-width:36rem}
+.steps .when{display:block;font-size:.88rem;color:var(--lichen);font-weight:600;margin-bottom:.2rem;filter:brightness(.8)}
+.note{margin-top:2.4rem;padding:1.1rem 1.3rem;background:var(--brume);border-left:3px solid var(--lichen);max-width:40rem;font-size:.97rem}
+.note p:last-child{margin:0}
+
+/* services */
+.services{background:var(--brume)}
+.services h2{margin-bottom:1rem}
+.svc{display:grid;gap:0;margin-top:2rem;border-top:1px solid var(--sable)}
+.svc div{padding:1.3rem 0;border-bottom:1px solid var(--sable)}
+.svc h3{margin-bottom:.3rem}
+.svc p{margin:0;color:var(--granite)}
+
+/* maison */
+.maison{display:grid;gap:2rem;align-items:center}
+.maison img{width:100%;aspect-ratio:4/3;filter:saturate(.7)}
+.credit{font-size:.75rem;color:var(--ardoise);margin-top:.4rem}
+
+/* marbrerie */
+.marbre{background:var(--granite);color:var(--brume)}
+.marbre h2,.marbre h3{color:var(--blanc)}
+.marbre a{color:var(--blanc)}
+.marbre .grid{display:grid;gap:2rem;align-items:start}
+.marbre img{width:100%;aspect-ratio:3/2;filter:saturate(.6)}
+.marbre ul{padding-left:1.1rem;margin:1rem 0 0}
+.marbre li{margin-bottom:.4rem}
+.marbre .credit{color:var(--sable)}
+
+/* avis */
+.avis{border-bottom:1px solid var(--sable)}
+.avis .box{border:1px solid var(--sable);padding:1.6rem;max-width:44rem;background:var(--blanc)}
+
+/* infos */
+.lieux{display:grid;gap:2rem;margin-top:2rem}
+.lieu h3{margin-bottom:.5rem}
+.lieu address{font-style:normal;margin-bottom:.8rem}
+.hours{border-collapse:collapse;margin:.4rem 0 .6rem;font-size:.97rem}
+.hours th{text-align:left;font-weight:500;padding:.25rem 1.6rem .25rem 0;color:var(--granite)}
+.hours td{padding:.25rem 0}
+.small{font-size:.88rem;color:var(--ardoise)}
+.lieu .links{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;font-size:.95rem}
+
+/* contact */
+.contact{background:var(--brume)}
+.contact .btn{margin-top:.6rem}
+
+footer{background:var(--encre);color:var(--sable);padding:2.4rem 0;font-size:.88rem}
+footer a{color:var(--blanc)}
+footer p{margin:0 0 .8rem}
+#mentions{margin-top:1rem;color:#b7bcbc;max-width:60rem}
+
+@media (min-width:860px){
+  .top nav{display:flex}
+  .hero .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:3.5rem;align-items:center}
+  .hero-text{padding:4.5rem 0}
+  .hero figure{padding:3rem 0}
+  .hero img{aspect-ratio:4/5;max-height:640px}
+  .hero figcaption{padding-inline:0}
+  .steps-head{grid-template-columns:1fr 1fr;align-items:end;gap:3rem}
+  .steps{margin-left:calc(50% + 1.5rem - 3.6rem)}
+  .note{margin-left:calc(50% + 1.5rem)}
+  .svc{grid-template-columns:1fr 1fr;column-gap:3.5rem}
+  .maison{grid-template-columns:1fr 1fr;gap:4rem}
+  .marbre .grid{grid-template-columns:1.1fr 1fr;gap:4rem}
+  .lieux{grid-template-columns:1fr 1fr;gap:4rem}
+  section{padding:5.5rem 0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#">Maison funéraire de la Côte<small>Pompes funèbres et marbrerie Daniel</small></a>
+    <nav aria-label="Navigation principale">
+      <a href="#deces">En cas de décès</a>
+      <a href="#services">Services</a>
+      <a href="#marbrerie">Marbrerie</a>
+      <a href="#infos">Adresses et horaires</a>
+    </nav>
+    <p class="permanence"><strong>Permanence</strong>24 h sur 24</p>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <h1>Accompagner les familles du Pays Bigouden, au calme</h1>
+        <p class="lead">Entreprise familiale de pompes funèbres et de marbrerie, à Plomeur et à Penmarch. Nous organisons les obsèques selon vos souhaits, religieux ou civils, et prenons en charge les démarches.</p>
+        <div class="actions">
+          <a class="btn" href="#contact">Nous contacter</a>
+          <a class="link-quiet" href="#deces">Que faire lors d'un décès</a>
+        </div>
+      </div>
+      <figure>
+        <img src="assets/kerity-penmarch.jpg" width="1600" height="1067" alt="Le bord de mer à Kérity, Penmarch, mer calme et ciel pâle">
+        <figcaption>Kérity, Penmarch. Photo Jeanne Menjoulet, CC BY 2.0.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section class="steps-sec" id="deces" aria-labelledby="deces-titre">
+    <div class="wrap">
+      <div class="steps-head">
+        <h2 id="deces-titre">Lorsqu'un décès survient</h2>
+        <p>Les premières heures sont souvent difficiles. Voici, de façon générale, les étapes à suivre. Nous pouvons vous accompagner à chacune d'elles.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="when">Tout de suite</span>
+          <h3>Faire constater le décès</h3>
+          <p>Un médecin établit le certificat de décès. À domicile, faites appel au médecin traitant ou au médecin de garde. À l'hôpital ou en maison de retraite, l'établissement s'en charge.</p>
+        </li>
+        <li>
+          <span class="when">Dès que possible</span>
+          <h3>Choisir l'entreprise de pompes funèbres</h3>
+          <p>La famille est libre de choisir les pompes funèbres. Vérifiez si le défunt avait souscrit un contrat obsèques ou laissé des volontés écrites. Le défunt peut ensuite être accueilli en maison funéraire.</p>
+        </li>
+        <li>
+          <span class="when">Dans les 24 heures</span>
+          <h3>Déclarer le décès en mairie</h3>
+          <p>La déclaration se fait à la mairie du lieu du décès, avec le certificat médical et une pièce d'identité du défunt. Nous pouvons l'effectuer pour vous.</p>
+        </li>
+        <li>
+          <span class="when">Dans les jours qui suivent</span>
+          <h3>Organiser les obsèques</h3>
+          <p>Inhumation ou crémation, cérémonie religieuse ou civile, avis d'obsèques, fleurs : nous préparons avec vous chaque détail. En règle générale, les obsèques ont lieu entre 24 heures et 6 jours ouvrables après le décès.</p>
+        </li>
+        <li>
+          <span class="when">Dans les semaines suivantes</span>
+          <h3>Prévenir les organismes</h3>
+          <p>Banque, caisses de retraite, assurances, employeur, notaire, services des impôts. Nous vous remettons la liste des démarches et les documents utiles.</p>
+        </li>
+      </ol>
+      <div class="note">
+        <p>Ces informations sont générales. Chaque situation est différente : nous prenons le temps de répondre à vos questions, de jour comme de nuit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services" aria-labelledby="services-titre">
+    <div class="wrap">
+      <h2 id="services-titre">Nos services</h2>
+      <p class="measure">Une seule équipe, du premier appel jusqu'à l'entretien de la sépulture.</p>
+      <div class="svc">
+        <div>
+          <h3>Organisation des obsèques</h3>
+          <p>Inhumation ou crémation, cérémonie religieuse ou civile, dans le respect de toutes les convictions.</p>
+        </div>
+        <div>
+          <h3>Démarches administratives</h3>
+          <p>Déclaration du décès, mairie, hôpitaux, lieu de culte, organismes : nous nous en occupons avec vous.</p>
+        </div>
+        <div>
+          <h3>Transport de corps</h3>
+          <p>Avant et après mise en bière, sur courtes et longues distances.</p>
+        </div>
+        <div>
+          <h3>Maison funéraire à Plomeur</h3>
+          <p>Des salons privés où la famille et les proches peuvent se recueillir.</p>
+        </div>
+        <div>
+          <h3>Prévoyance obsèques</h3>
+          <p>Préparer à l'avance vos volontés, inhumation ou crémation, pour en décharger vos proches.</p>
+        </div>
+        <div>
+          <h3>Entretien des tombes</h3>
+          <p>Nettoyage, désherbage et fleurissement des sépultures, pour les familles éloignées ou qui le souhaitent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="maison" aria-labelledby="maison-titre">
+    <div class="wrap maison">
+      <div>
+        <img src="assets/iris-plomeur.jpg" width="1200" height="900" alt="Champ d'iris sauvages en fleurs à Plomeur" loading="lazy">
+        <p class="credit">Iris à Plomeur. Photo El Funcionario, CC BY-SA 4.0.</p>
+      </div>
+      <div class="measure">
+        <h2 id="maison-titre">La maison funéraire</h2>
+        <p class="intro">À Pendreff, sur la route de Plobannalec, la maison funéraire accueille les défunts et leurs proches dans un lieu calme, non loin de la mer.</p>
+        <p>Elle dispose de quatre salons. Les familles peuvent venir se recueillir et rester auprès de leur proche, de jour comme de nuit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="marbre" id="marbrerie" aria-labelledby="marbre-titre">
+    <div class="wrap grid">
+      <div>
+        <h2 id="marbre-titre">Marbrerie et monuments</h2>
+        <p style="margin-top:1rem">Nous réalisons et posons les monuments funéraires, en granit ou en marbre, et assurons les travaux de cimetière.</p>
+        <ul>
+          <li>Monuments et stèles personnalisables</li>
+          <li>Caveaux</li>
+          <li>Plaques et gravure</li>
+          <li>Rénovation et entretien de sépultures</li>
+        </ul>
+      </div>
+      <div>
+        <img src="assets/rochers-saint-guenole.jpg" width="1200" height="800" alt="Rochers de granit au bord de la mer à Saint-Guénolé, sous un ciel gris" decoding="async">
+        <p class="credit">Rochers à Saint-Guénolé. Photo Jeanne Menjoulet, CC BY 2.0.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="avis" id="avis" aria-labelledby="avis-titre">
+    <div class="wrap">
+      <div class="box">
+        <h2 id="avis-titre">Avis d'obsèques</h2>
+        <p style="margin-top:.8rem">Sur le site définitif, cette rubrique publiera les avis d'obsèques confiés par les familles, avec la date et le lieu de la cérémonie.</p>
+        <p class="small" style="margin:0">Aucun avis n'est affiché sur cette maquette.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="infos" aria-labelledby="infos-titre">
+    <div class="wrap">
+      <h2 id="infos-titre">Adresses et horaires</h2>
+      <p class="measure" style="margin-top:.8rem">Une permanence est assurée 24 heures sur 24, 7 jours sur 7.</p>
+      <div class="lieux">
+        <div class="lieu">
+          <h3>Maison funéraire, Plomeur</h3>
+          <address>Route de Plobannalec, Pendreff<br>29120 Plomeur</address>
+          <table class="hours">
+            <caption class="small" style="text-align:left;padding-bottom:.3rem">Accueil et visites</caption>
+            <tr><th scope="row">Lundi au samedi</th><td>9 h à 19 h</td></tr>
+            <tr><th scope="row">Dimanche</th><td>9 h 30 à 19 h</td></tr>
+          </table>
+          <p class="small">Horaires indicatifs, à confirmer.</p>
+          <p class="links">
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Maison%20fun%C3%A9raire%20de%20la%20C%C3%B4te%2C%20Route%20de%20Plobannalec%2C%20Pendreff%2C%2029120%20Plomeur">Itinéraire</a>
+            <a href="https://www.openstreetmap.org/node/9685829085">Voir sur OpenStreetMap</a>
+          </p>
+        </div>
+        <div class="lieu">
+          <h3>Agence de Penmarch</h3>
+          <address>318 rue des Primevères, Saint-Guénolé<br>29760 Penmarch</address>
+          <p class="small">Horaires de l'agence à compléter.</p>
+          <p class="links">
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=318%20rue%20des%20Primev%C3%A8res%2C%2029760%20Penmarch">Itinéraire</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-titre">
+    <div class="wrap"><div class="measure">
+      <h2 id="contact-titre">Nous contacter</h2>
+      <p style="margin-top:.8rem">Pour un décès, une question sur la prévoyance ou un projet de monument, vous pouvez venir nous rencontrer à Plomeur ou à Penmarch.</p>
+      <p class="small">Le formulaire de contact et les coordonnées seront ajoutés sur le site définitif.</p>
+    </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Maison funéraire de la Côte, Route de Plobannalec, Pendreff, 29120 Plomeur. Agence : 318 rue des Primevères, Saint-Guénolé, 29760 Penmarch.</p>
+    <p>Photos : Jeanne Menjoulet (CC BY 2.0), El Funcionario (CC BY-SA 4.0), via Wikimedia Commons.</p>
+    <div id="mentions">Mentions légales et confidentialité. Éditeur : SARL Daniel Y, 318 rue des Primevères, Saint-Guénolé, 29760 Penmarch. SIRET, directeur de la publication et hébergeur : à compléter. Ce site ne dépose aucun cookie et ne collecte aucune donnée personnelle ; les polices sont chargées depuis Google Fonts.</div>
+    <p style="margin-top:1rem">Site de démonstration, maquette non officielle. Démo réalisée par Avel, développeur web.</p>
+  </div>
+</footer>
+
+</body>
+</html>
