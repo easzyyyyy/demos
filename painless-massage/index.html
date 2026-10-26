@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Painless Deep Tissue Massage, massage à Bénodet</title>
+<meta name="description" content="Painless Deep Tissue Massage, 25 avenue de la Plage à Bénodet : massages de bien-être en français ou en anglais, séances de 60 et 90 minutes.">
+<!--
+  Photos d'illustration :
+  massage-epaules.jpg https://unsplash.com/photos/hBLf2nvp-Yc (Toa Heftiba, licence Unsplash)
+  massage-dos.jpg     https://unsplash.com/photos/0d6R1iCh1SE (Paige Madison, licence Unsplash)
+  serviettes.jpg      https://unsplash.com/photos/s9zGsWDiFO4 (Denny Müller, licence Unsplash)
+  phare-du-coq.jpg    https://commons.wikimedia.org/wiki/File:B%C3%A9nodet_-_Phare_du_Coq_(24487781467).jpg (Nicolas Vollmer, CC BY 2.0, redimensionnée)
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;1,300&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+img{max-height:90svh;object-fit:cover}
+:root{
+  --brume:#eef2f1; --odet:#24606b; --odet-d:#163a40; --sable:#e3d3b5; --peau:#c98b7a;
+  --encre:#1b2a2e; --doux:#566a6e; --trait:#d3dedd;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--brume);color:var(--encre);font:400 1.05rem/1.65 Jost,system-ui,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--peau);outline-offset:3px}
+h1,h2,h3{font-family:Spectral,Georgia,serif;font-weight:300;line-height:1.08;margin:0 0 .45em}
+h2{font-size:clamp(2.2rem,8vw,3.4rem);color:var(--odet-d)}
+h3{font-size:1.35rem;font-weight:400}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+section{padding:64px 0}
+
+.bar{position:absolute;top:0;left:0;right:0;z-index:2}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:14px;padding-bottom:14px}
+.name{font-family:Spectral,serif;font-size:1.15rem;line-height:1.15;text-decoration:none;color:var(--odet-d)}
+.bar nav{display:none;gap:20px;font-weight:500}
+.bar nav a{text-decoration:none}
+.bar nav a:hover{color:var(--odet)}
+.lang{display:flex;border:1px solid var(--odet-d);border-radius:999px;overflow:hidden;background:rgba(238,242,241,.8)}
+.lang button{font:600 .85rem Jost,sans-serif;border:0;background:transparent;color:var(--odet-d);padding:6px 12px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--odet-d);color:var(--brume)}
+
+.hero{position:relative;min-height:92svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero > img{position:absolute;inset:0;width:100%;height:100%;max-height:none}
+.hero .panel{position:relative;z-index:1;width:100%;padding:0 0 28px}
+.hero .card{background:rgba(238,242,241,.92);padding:26px 20px 28px;max-width:640px}
+.hero h1{font-size:clamp(2.6rem,11vw,5rem);color:var(--odet-d);margin-bottom:.3em}
+.hero p{margin:0 0 22px;font-size:1.12rem;max-width:40ch}
+.hero .credit-img{position:absolute;right:10px;top:76px;z-index:1;font-size:.75rem;background:rgba(238,242,241,.8);padding:3px 8px}
+@media (prefers-reduced-motion:no-preference){
+  .hero h1{animation:tide 1.6s ease-out both}
+  @keyframes tide{from{opacity:0;letter-spacing:.06em}to{opacity:1;letter-spacing:0}}
+}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:1.5px solid transparent}
+.btn.plein{background:var(--odet);color:#fff}
+.btn.plein:hover{background:var(--odet-d)}
+.btn.trait{border-color:var(--odet-d);color:var(--odet-d)}
+.btn.trait:hover{background:rgba(36,96,107,.08)}
+
+.massages .grid{display:grid;gap:34px}
+.massages .intro{font-size:1.12rem;max-width:52ch}
+.styles{list-style:none;margin:0;padding:0;border-top:1px solid var(--trait)}
+.styles li{padding:13px 0;border-bottom:1px solid var(--trait);font-family:Spectral,serif;font-size:1.35rem;font-weight:300}
+.massages .note{font-size:.95rem;color:var(--doux);max-width:52ch;margin-top:22px}
+.massages figure{margin:0}
+.massages figure img{width:100%;aspect-ratio:4/5;border-radius:180px 180px 4px 4px}
+figcaption{font-size:.8rem;color:var(--doux);margin-top:6px}
+
+.visite{background:#fff}
+.visite .grid{display:grid;gap:34px}
+.visite ol{margin:0;padding-left:1.3em;max-width:54ch}
+.visite li{padding:6px 0 10px 6px}
+.visite li::marker{font-family:Spectral,serif;color:var(--peau);font-size:1.2em}
+.visite figure{margin:0}
+.visite figure img{width:100%;aspect-ratio:3/2;border-radius:4px}
+
+.tarifs{background:var(--odet-d);color:var(--brume)}
+.tarifs h2{color:#fff}
+.prix{display:grid;gap:18px;margin:12px 0 26px}
+.prix div{border-top:1px solid rgba(238,242,241,.3);padding-top:14px;display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.prix .duree{font-size:1.1rem}
+.prix .montant{font-family:Spectral,serif;font-weight:300;font-size:clamp(3.4rem,15vw,6rem);line-height:1;color:var(--sable)}
+.tarifs p{max-width:56ch;color:#cddadb;margin:0 0 8px}
+
+.benodet{padding:0;background:var(--brume)}
+.benodet .grid{display:grid}
+.benodet figure{margin:0}
+.benodet img{width:100%;aspect-ratio:3/2;height:100%}
+.benodet figcaption{padding:6px 16px 0}
+.benodet .text{padding:40px 16px 64px}
+.benodet p{max-width:48ch;font-size:1.1rem}
+
+.infos .grid{display:grid;gap:34px}
+.infos address{font-style:normal;font-size:1.3rem;line-height:1.45;margin-bottom:18px}
+.infos dl{margin:0}
+.infos dt{font-weight:600;color:var(--odet-d)}
+.infos dd{margin:2px 0 16px;max-width:44ch}
+.links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-weight:500}
+.rdv{background:var(--sable);padding:24px 22px;border-radius:4px;margin-top:8px}
+.rdv h3{color:var(--odet-d);font-size:1.6rem}
+.rdv p{margin:0 0 10px}
+
+footer{background:var(--odet-d);color:#c5d3d4;padding:34px 0 42px;font-size:.92rem}
+footer .name{color:#fff}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 18px;margin:14px 0}
+footer nav a{text-decoration:none}
+footer nav a:hover{text-decoration:underline}
+#mentions{margin-top:12px;font-size:.82rem;max-width:80ch}
+.credit{margin-top:10px;font-size:.78rem}
+
+@media (min-width:860px){
+  section{padding:96px 0}
+  .bar nav{display:flex}
+  .hero .panel{padding-bottom:56px}
+  .hero .card{padding:36px 40px 40px}
+  .massages .grid{grid-template-columns:1.2fr 1fr;gap:64px;align-items:center}
+  .visite .grid{grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .tarifs .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:end}
+  .prix{margin:0}
+  .benodet .grid{grid-template-columns:1.1fr 1fr;align-items:center}
+  .benodet .text{padding:48px 56px}
+  .infos .grid{grid-template-columns:1fr 1fr;gap:64px}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="name" href="#top">Painless Deep Tissue Massage</a>
+    <nav aria-label="Navigation principale" data-en-label="Main navigation">
+      <a href="#massages" data-en="Massages">Les massages</a>
+      <a href="#visite" data-en="First visit">Première séance</a>
+      <a href="#tarifs" data-en="Rates">Tarifs</a>
+      <a href="#infos" data-en="Find us">Infos</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Langue / Language">
+      <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <img src="assets/massage-epaules.jpg" width="1600" height="1067" alt="Mains qui massent les épaules d'une personne allongée, dans une lumière douce" data-en-alt="Hands massaging the shoulders of a person lying down, in soft light">
+    <span class="credit-img" data-en="Illustration photo">Photo d'illustration</span>
+    <div class="panel">
+      <div class="wrap">
+        <div class="card">
+          <h1 data-en="Deep tissue massage, without the pain">Massage en profondeur, sans douleur</h1>
+          <p data-en="Wellbeing massage in Bénodet, in English or in French.">Massages de bien-être à Bénodet, en français ou en anglais.</p>
+          <div class="btns">
+            <a class="btn plein" href="#infos" data-en="Book a session">Prendre rendez-vous</a>
+            <a class="btn trait" href="#tarifs" data-en="See rates">Voir les tarifs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="massages" class="massages">
+    <div class="wrap grid">
+      <div>
+        <h2 data-en="Massages">Les massages</h2>
+        <p class="intro" data-en="Each session is shaped around what you are looking for, from pure relaxation to firmer, deeper work.">Chaque séance s'adapte à ce que vous recherchez, de la pure détente à un travail plus appuyé, en profondeur.</p>
+        <ul class="styles">
+          <li data-en="Relaxation massage">Massage relaxant</li>
+          <li data-en="Painless deep tissue">Deep tissue sans douleur</li>
+          <li data-en="Trigger point work">Travail des points gâchettes</li>
+          <li data-en="Muscle detox">Détox musculaire</li>
+          <li data-en="Lymphatic drainage">Drainage lymphatique</li>
+          <li data-en="Swedish massage">Massage suédois</li>
+          <li data-en="Sports massage">Massage sportif</li>
+        </ul>
+        <p class="note" data-en="Wellbeing massage only, strictly non-sexual. A massage is not a substitute for medical advice.">Des massages de bien-être, strictement non sexuels. Un massage ne remplace pas un avis médical.</p>
+      </div>
+      <figure>
+        <img src="assets/massage-dos.jpg" width="1600" height="1067" loading="lazy" alt="Main posée à plat sur le bas du dos d'une personne" data-en-alt="A hand resting flat on a person's lower back">
+        <figcaption data-en="Illustration photo">Photo d'illustration</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="visite" class="visite">
+    <div class="wrap grid">
+      <div>
+        <h2 data-en="Your first visit">Votre première séance</h2>
+        <ol>
+          <li data-en="You fill in a short form.">Vous remplissez un court questionnaire.</li>
+          <li data-en="You settle on the table between two sheets, under a light blanket.">Vous vous installez sur la table entre deux draps, sous une couverture légère.</li>
+          <li data-en="The massage begins with long, slow strokes with oil. Only the area being worked on is uncovered.">Le massage commence par de longs mouvements lents, à l'huile. Seule la zone travaillée est découverte.</li>
+          <li data-en="Afterwards, drink plenty of water.">Après la séance, pensez à bien vous hydrater.</li>
+        </ol>
+      </div>
+      <figure>
+        <img src="assets/serviettes.jpg" width="1600" height="1067" loading="lazy" alt="Pile de serviettes vertes pliées sur un tabouret en bois clair" data-en-alt="A stack of folded green towels on a light wooden stool">
+        <figcaption data-en="Illustration photo">Photo d'illustration</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="tarifs" class="tarifs">
+    <div class="wrap">
+      <div>
+        <h2 data-en="Rates">Tarifs</h2>
+        <p data-en="Payment in full, in cash or by cheque from a French bank.">Règlement en totalité, en espèces ou par chèque d'une banque française.</p>
+      </div>
+      <div class="prix">
+        <div><span class="duree" data-en="60-minute session">Séance de 60 minutes</span><span class="montant">70 €</span></div>
+        <div><span class="duree" data-en="90-minute session">Séance de 90 minutes</span><span class="montant">105 €</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benodet">
+    <div class="grid">
+      <figure>
+        <img src="assets/phare-du-coq.jpg" width="1600" height="1067" loading="lazy" alt="Le phare du Coq à Bénodet, à l'entrée de l'Odet, sous un ciel bleu" data-en-alt="The Phare du Coq lighthouse in Bénodet, at the mouth of the Odet, under a blue sky">
+        <figcaption data-en="Phare du Coq, Bénodet. Photo Nicolas Vollmer, CC BY 2.0, via Wikimedia Commons.">Phare du Coq, Bénodet. Photo Nicolas Vollmer, CC BY 2.0, via Wikimedia Commons.</figcaption>
+      </figure>
+      <div class="text">
+        <h2 data-en="In Bénodet">À Bénodet</h2>
+        <p data-en="Walt Morrey welcomes you at 25 avenue de la Plage, for sessions in English or in French.">Walt Morrey vous reçoit au 25 avenue de la Plage, pour des séances en anglais ou en français.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="infos" class="infos">
+    <div class="wrap grid">
+      <div>
+        <h2 data-en="Find us">Infos pratiques</h2>
+        <address>Painless Deep Tissue Massage<br>25 avenue de la Plage<br>29950 Bénodet</address>
+        <div class="btns">
+          <a class="btn plein" href="https://www.google.com/maps/search/?api=1&amp;query=Painless+Deep+Tissue+Massage+25+Avenue+de+la+Plage+29950+B%C3%A9nodet" data-en="Directions">Itinéraire</a>
+        </div>
+        <div class="links">
+          <a href="https://www.openstreetmap.org/node/14119444706" data-en="OpenStreetMap">Plan OpenStreetMap</a>
+        </div>
+      </div>
+      <div>
+        <dl>
+          <dt data-en="Opening hours">Horaires</dt>
+          <dd data-en="Monday to Saturday, 10 am to 4 pm (to be confirmed).">Du lundi au samedi, de 10 h à 16 h (à confirmer).</dd>
+          <dt data-en="Languages">Langues</dt>
+          <dd data-en="English and French.">Français et anglais.</dd>
+          <dt data-en="Payment">Paiement</dt>
+          <dd data-en="Cash or French cheque.">Espèces ou chèque français.</dd>
+        </dl>
+        <div class="rdv">
+          <h3 data-en="Book a session">Prendre rendez-vous</h3>
+          <p data-en="Online booking will be connected on the final site.">La réservation en ligne sera branchée sur le site final.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="name" href="#top">Painless Deep Tissue Massage</a>
+    <nav aria-label="Pied de page" data-en-label="Footer">
+      <a href="#massages" data-en="Massages">Les massages</a>
+      <a href="#tarifs" data-en="Rates">Tarifs</a>
+      <a href="#infos" data-en="Find us">Infos</a>
+      <a href="#mentions" data-en="Legal notice">Mentions légales</a>
+      <a href="#mentions" data-en="Privacy">Confidentialité</a>
+    </nav>
+    <div id="mentions" data-en="Legal notice and privacy. Publisher: Painless Deep Tissue Massage, 25 avenue de la Plage, 29950 Bénodet. SIRET, publication director and host: to be completed. This site sets no cookies and collects no personal data; fonts are loaded from Google Fonts.">Mentions légales et confidentialité. Éditeur : Painless Deep Tissue Massage, 25 avenue de la Plage, 29950 Bénodet. SIRET, directeur de la publication et hébergeur : à compléter. Ce site ne dépose aucun cookie et ne collecte aucune donnée personnelle ; les polices sont chargées depuis Google Fonts.</div>
+    <div class="credit" data-en="Illustration photos: Unsplash (Toa Heftiba, Paige Madison, Denny Müller) and Wikimedia Commons (Nicolas Vollmer, CC BY 2.0).">Photos d'illustration : Unsplash (Toa Heftiba, Paige Madison, Denny Müller) et Wikimedia Commons (Nicolas Vollmer, CC BY 2.0).</div>
+    <div class="credit" data-en="Demo site, unofficial mock-up. Demo made by Avel, web developer.">Site de démonstration, maquette non officielle. Démo réalisée par Avel, développeur web.</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var TITLE_EN = 'Painless Deep Tissue Massage, massage in Bénodet';
+  var DESC_EN = 'Painless Deep Tissue Massage, 25 avenue de la Plage in Bénodet: wellbeing massage in English or French, 60 and 90-minute sessions.';
+  var desc = document.querySelector('meta[name="description"]');
+  var fr = { title: document.title, desc: desc.getAttribute('content') };
+
+  function swap(el, attr, enAttr, lang) {
+    var key = 'data-fr-' + attr;
+    if (!el.hasAttribute(key)) el.setAttribute(key, attr === 'html' ? el.innerHTML : el.getAttribute(attr));
+    var val = lang === 'en' ? el.getAttribute(enAttr) : el.getAttribute(key);
+    if (attr === 'html') el.innerHTML = val; else el.setAttribute(attr, val);
+  }
+
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-en]').forEach(function (el) { swap(el, 'html', 'data-en', lang); });
+    document.querySelectorAll('[data-en-alt]').forEach(function (el) { swap(el, 'alt', 'data-en-alt', lang); });
+    document.querySelectorAll('[data-en-label]').forEach(function (el) { swap(el, 'aria-label', 'data-en-label', lang); });
+    document.title = lang === 'en' ? TITLE_EN : fr.title;
+    desc.setAttribute('content', lang === 'en' ? DESC_EN : fr.desc);
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.setAttribute('aria-pressed', b.dataset.lang === lang ? 'true' : 'false');
+    });
+    try { localStorage.setItem('painless-lang', lang); } catch (e) {}
+  }
+
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.dataset.lang); });
+  });
+
+  var saved = 'fr';
+  try { saved = localStorage.getItem('painless-lang') || 'fr'; } catch (e) {}
+  if (saved === 'en') setLang('en');
+})();
+</script>
+</body>
+</html>
